@@ -1,0 +1,2 @@
+a{color:var(--pln-biru)}a:hover{color:var(--pln-navy)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus-ring);outline-offset:2px}

@@ -1,0 +1,11 @@
+* text=auto
+*.png binary
+*.jpg binary
+*.webp binary
+*.pptx binary
+*.ttf binary
+tokens/backgrounds.css -diff linguist-generated
+tokens/icons-3d.css -diff linguist-generated
+tokens/imagery.css -diff linguist-generated
+_ds_bundle.js -diff linguist-generated
+uploads/*.html -diff

@@ -1,0 +1,37 @@
+@import url('../tokens/fonts.css');
+/* PLN Icon Plus slide canvas — 1280×720, 1in = --u (96px). Copied from Sistem_Desain_Layout_PLN_Icon_Plus_7_Versi.html */
+.slide{aspect-ratio:13.333/7.5;position:relative;overflow:hidden;background:#fff;border-radius:6px;box-shadow:0 0 0 1px #DFE0E1}
+.crop{position:relative;overflow:hidden;background:#fff;border-radius:6px;box-shadow:0 0 0 1px #DFE0E1}
+.sc{position:absolute;left:0;top:0;transform-origin:0 0;transform:scale(var(--k,.4));overflow:hidden}
+.cv{position:absolute;inset:0;width:1280px;height:720px;--u:96px;font-family:var(--t-font-body,Arial,"Liberation Sans",Helvetica,sans-serif);color:#0A1233;background-size:cover;background-position:center}
+.cv *{box-sizing:border-box}
+.a{position:absolute;left:calc(var(--x)*var(--u));top:calc(var(--y)*var(--u));width:calc(var(--w)*var(--u));height:calc(var(--h)*var(--u));margin:0;display:block}
+.t{display:flex;flex-direction:column;font-size:calc(var(--fs)*var(--u)/72);overflow:visible}
+.t p,.t li{margin:0;max-width:none}
+.ttl{line-height:1.08;letter-spacing:0;font-family:Arial,"Liberation Sans",Helvetica,sans-serif}
+.bx{display:flex}
+.ti{flex:1;display:flex;font-size:calc(var(--fs)*var(--u)/72);line-height:1.1;padding:0 calc(var(--u)*.06)}
+.bl{margin:0;padding-left:calc(var(--u)*.18)}
+.bl li{list-style:disc}
+.ik{fill:none;stroke:currentColor;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+.tb{display:table;border-collapse:collapse;table-layout:fixed;font-size:calc(var(--fs)*var(--u)/72);height:auto}
+.tb th{background:var(--hf);color:#fff;font-weight:700;height:calc(var(--rh)*var(--u));padding:0 calc(var(--u)*.1)}
+.tb td{background:#fff;color:#0A1233;height:calc(var(--rh)*var(--u));padding:0 calc(var(--u)*.1);border-bottom:calc(var(--u)*.007) solid var(--t-line,#C7D7F0)}
+.tb tr.tot td{background:var(--t-tint,#EFF6FE);font-weight:700}
+.tb-d td{background:var(--t-dark-2,#16396E);color:#fff;border-bottom-color:var(--t-dark-line,#2B4F86)}.tb-d tr.tot td{background:var(--t-strong,#002060)}
+.logo-c{background:url(../assets/logo-color.png) center/contain no-repeat}
+.logo-w{background:url(../assets/logo-white.png) center/contain no-repeat}
+.bg-sampul{background-image:url(../assets/bg-sampul.jpg)}
+.bg-bagian{background-image:url(../assets/bg-bagian.jpg)}
+.bg-abu{background-image:url(../assets/bg-abu.jpg)}
+.bg-biru{background-image:url(../assets/bg-biru.jpg)}
+.bg-penutup{background-image:url(../assets/bg-penutup.jpg)}
+.bg-indeks{background:url(../assets/bg-indeks.jpg) center/cover}
+.f-cal .t,.f-cal .ti,.f-cal .tb{font-family:Calibri,Carlito,"Liberation Sans",Arial,sans-serif}
+.f-cal .ttl7{font-family:Arial,"Liberation Sans",Helvetica,sans-serif!important}
+.arc-map{background:url(../assets/arc-map.png) center/100% 100% no-repeat}
+.arc-dan{background:url(../assets/arc-danantara.png) center/contain no-repeat}
+.arc-pln{background:url(../assets/arc-pln.png) center/contain no-repeat}
+.arc-pin{background:url(../assets/arc-pin.png) center/contain no-repeat}
+.ik-sprite{position:absolute;width:0;height:0}
+html,body{margin:0;background:#fff}

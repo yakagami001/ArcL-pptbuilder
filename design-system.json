@@ -1,0 +1,68 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "Other": {
+      "files": {},
+      "name": "Other",
+      "order": []
+    },
+    "header-art": {
+      "files": {},
+      "name": "header-art",
+      "order": []
+    },
+    "icons": {
+      "files": {},
+      "name": "icons",
+      "order": []
+    },
+    "icons-3d": {
+      "files": {},
+      "name": "icons-3d",
+      "order": []
+    },
+    "notes": {
+      "files": {},
+      "name": "notes",
+      "order": []
+    },
+    "photos": {
+      "files": {},
+      "name": "photos",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-22T06:55:09.069Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/docs/components/slide/Slide.prompt.md"
+    ]
+  },
+  "editing": "off",
+  "groups": [
+    "Other",
+    "header-art",
+    "icons-3d",
+    "icons",
+    "notes",
+    "photos"
+  ],
+  "layout": "files",
+  "libraries": [],
+  "namespace": "PLNIconPlusLayoutDesignSystem_1eff41",
+  "sections": {},
+  "source": {
+    "app": "claude-design",
+    "exportedAt": "2026-10-22T06:55:09.069Z",
+    "map": "project/migration-map.json",
+    "projectId": "1eff4104-79d6-4c4f-b30b-36e04e3083e2",
+    "url": "https://claude.ai/design/p/1eff4104-79d6-4c4f-b30b-36e04e3083e2",
+    "v": 1
+  },
+  "title": "Powerfull PLN Icon Plus Layout Design System"
+}

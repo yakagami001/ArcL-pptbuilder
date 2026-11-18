@@ -1,0 +1,31 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Blok isi" subtitle="KpiCard, BigNumber, InsightBand, Pill, Callout, PillarCard, OptionCard, QuestionCard" -->
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;font-family:var(--font-sans);background:#F4F6FA}.mini{transform-origin:0 0;box-shadow:0 0 0 1px #DFE0E1}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS = window.PLNIconPlusLayoutDesignSystem_1eff41;
+const { KpiCard, BigNumber, InsightBand, Pill, Callout, PillarCard, OptionCard, QuestionCard } = NS;
+const k=0.5;
+ReactDOM.createRoot(document.getElementById('root')).render(<div style={{width:1400,transform:'scale('+k+')',transformOrigin:'0 0',padding:24,display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:20}}>
+<KpiCard label="Total Portofolio" value="Rp 129,85 M" note="s.d. Sep 2026" />
+<KpiCard label="Opportunity" value="77,5%" icon="target" highlight />
+<KpiCard variant="feasibility" label="IRR proyek" value="18,4%" criteria="Lolos" />
+<KpiCard variant="v7" label="Project Eksisting" value="Rp 29,18 M" icon="panah-naik" highlight />
+<KpiCard variant="dark" label="Ketersediaan AMI" value="99,2%" note="target 98%" />
+<KpiCard variant="dark" label="Meter terbaca" value="1,24 jt" highlight />
+<BigNumber value="2,3×" label="Pertumbuhan portofolio" compare="+38% vs target 2026" />
+<div style={{display:'flex',flexWrap:'wrap',gap:8,alignContent:'center'}}><Pill tone="ok">Tercapai</Pill><Pill tone="warn">Waspada</Pill><Pill tone="crit">Kritis</Pill><Pill tone="biru" size="md">Tema utama</Pill><Pill tone="tealt" size="md">Pilar</Pill><Pill tone="navy">BAB 03</Pill></div>
+<InsightBand style={{gridColumn:'span 2'}}>Pendapatan berulang kini menopang 41% total pendapatan.</InsightBand>
+<InsightBand variant="dark" label="KEY TAKEAWAY" style={{gridColumn:'span 2'}}>Satu platform memangkas waktu rekonsiliasi dari 5 hari ke 1 hari.</InsightBand>
+<InsightBand variant="v7" style={{gridColumn:'span 4'}}>PLN Icon Plus berperan sebagai system integrator resmi ArcGIS di ekosistem PLN Group.</InsightBand>
+<Callout variant="quote" author="Direktur Distribusi" role="PT PLN (Persero)" style={{gridColumn:'span 2'}}>Perkuat peran PLN Icon Plus sebagai enabler platform digital distribusi.</Callout>
+<div style={{display:'flex',flexDirection:'column',gap:14,gridColumn:'span 2'}}><Callout variant="open">Model bagi hasil dengan mitra <b>belum diputuskan</b>.</Callout><Callout variant="next">Kick-off POC 2 minggu · keluaran: dokumen lingkup.</Callout><Callout variant="decision">Direksi menyetujui Tahap 1 senilai Rp 12,4 M paling lambat 30 Nov 2026.</Callout></div>
+{[1,2,3,4].map(i=><PillarCard key={i} index={i} title={['Integrasi data','Aplikasi lapangan','Analitik','Tata kelola'][i-1]} items={['Satu sumber data aset','Sinkron Maximo']} basis="Rp 4,2 M" />)}
+<OptionCard letter="A" title="Bangun sendiri" points={['Capex Rp 18 M','Waktu 18 bulan']} style={{gridColumn:'span 2'}} />
+<OptionCard letter="B" title="Kemitraan strategis" points={['Capex Rp 7 M','Waktu 9 bulan']} recommended style={{gridColumn:'span 2'}} />
+<QuestionCard index={1} question="Layer digitalisasi mana yang diprioritaskan 2027?" output="Daftar prioritas per layer" style={{gridColumn:'span 4'}} />
+</div>);
+</script></body></html>

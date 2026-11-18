@@ -1,0 +1,28 @@
+/* PLN Icon Plus — palet terpadu V1–V6 + palet V7 (Business Plan ArcGIS) */
+:root{
+/* Inti (hue 187°–223°) */
+--pln-navy:#002060;--pln-biru:#1F5FA6;--pln-tealt:#035B71;--pln-teal:#00A2B9;--pln-cyan:#00AFF0;--pln-amber:#FFC000;
+/* Status */
+--pln-hijau:#2D7055;--pln-oranye:#EF8924;--pln-merah:#E4572E;
+/* Netral & permukaan */
+--pln-ink:#0A1233;--pln-teks2:#5C6474;--pln-abu1:#DFE0E1;--pln-abu2:#A9A9AA;--pln-abu3:#7F8080;--pln-tint:#EFF6FE;--pln-garis:#C7D7F0;--pln-latar:#EAEAEA;--pln-putih:#FFFFFF;--pln-kabut:#C7D7F0;
+/* Gelap (V5 & tabel gelap) */
+--pln-navy-2:#16396E;--pln-navy-line:#2B4F86;--pln-navy-card:#0B2B6B;--pln-ribbon:#05A7E1;
+/* Tint status (do/don't, sorot) */
+--pln-tint-amber:#FFF6DB;--pln-tint-cyan:#E0F5FD;--pln-tint-hijau:#E7F1EC;--pln-tint-merah:#FBE9E4;
+/* Hanya logo — dilarang di isi */
+--pln-logo-kuning:#FFFF00;--pln-logo-merah:#FF0000;
+/* Seri chart (maks. 4) */
+--chart-1:var(--pln-biru);--chart-2:var(--pln-teal);--chart-3:var(--pln-navy);--chart-4:var(--pln-abu2);--chart-1-dark:var(--pln-cyan);
+
+/* V7 · Business Plan ArcGIS — jangan dicampur dengan palet terpadu */
+--v7-ink:#0A1233;--v7-royal:#1747C8;--v7-navy:#003183;--v7-birupil:#0A57C9;--v7-gold:#FCBC01;--v7-cyan:#00AEEF;--v7-teks2:#5C6474;--v7-garis:#C7D7F0;--v7-tint:#EFF6FE;--v7-tint2:#E6EFFB;--v7-brdr:#9CC0EE;--v7-div:#AFC6E8;--v7-row:#EDF2FA;--v7-sep:#9AA7C4;--v7-line:#B9C6DE;--v7-dot:#8FA3C6;--v7-footg:#AEB8CE;--v7-conf:#8B93A6;--v7-kuning:#FDD64F;--v7-oranye:#F5A623;--v7-merah:#F3481A;--v7-goldt:#FFF6DB;--v7-goldl:#F0DCA0;
+
+/* Semantik */
+--text-body:var(--pln-ink);--text-muted:var(--pln-teks2);--text-on-dark:var(--pln-putih);--text-on-dark-muted:var(--pln-kabut);--text-accent:var(--pln-biru);--text-accent-2:var(--pln-tealt);
+--surface-page:var(--pln-putih);--surface-gray:var(--pln-latar);--surface-card:var(--pln-putih);--surface-tint:var(--pln-tint);--surface-dark:var(--pln-navy);--surface-dark-2:var(--pln-navy-2);
+--border-card:var(--pln-garis);--border-divider:var(--pln-abu1);--border-dark:var(--pln-navy-line);
+--accent-highlight:var(--pln-amber);--accent-signal:var(--pln-cyan);--accent-flow:var(--pln-teal);
+--status-ok:var(--pln-hijau);--status-warn:var(--pln-oranye);--status-crit:var(--pln-merah);
+--focus-ring:var(--pln-amber);
+}

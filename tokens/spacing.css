@@ -1,0 +1,28 @@
+/* Kanvas 13,333 × 7,5 in (16:9). 1 in = 96px pada kanvas 1280×720. */
+:root{
+--canvas-w:1280px;--canvas-h:720px;--u:96px;
+--canvas-margin:57.6px;      /* 0,6in M */
+--canvas-content-top:148.8px;/* 1,55in Y0 */
+--canvas-content-bottom:650.88px;/* 6,78in YB (V6: 6,55in) */
+--canvas-spec-y:670.08px;    /* 6,98in YSPEC */
+--canvas-gap:24px;           /* 0,25in GAP */
+--canvas-ribbon:10.56px;     /* 0,11in pita kiri */
+--pad-card:19.2px;--pad-card-lg:28.8px; /* 0,2–0,3in */
+/* Radius */
+--radius-card:7.68px;  /* 0,08in */
+--radius-bar:5.76px;   /* 0,06in */
+--radius-panel:11.52px;/* 0,12in */
+--radius-panel-lg:17.28px;/* 0,18in */
+--radius-v7-insight:9.6px;/* 0,1in */
+--radius-pill:999px;
+/* Garis */
+--line-card:1px;   /* 0,75pt #C7D7F0 */
+--line-accent:2px; /* 1,5pt sorot */
+--line-accent-lg:3px;/* 2,25pt */
+--shadow:none;     /* bayangan tidak dipakai */
+/* Ikon */
+--icon-stroke:3.4;--icon-sm:27px;--icon-md:44px;--icon-lg:67px;--icon-circle:67px;
+/* Spasi UI dokumen */
+--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;
+--radius-ui-sm:4px;--radius-ui:6px;--radius-ui-md:8px;--radius-ui-lg:10px;--radius-ui-xl:12px;
+}

@@ -1,0 +1,178 @@
+{
+ "variants": [
+  "pale",
+  "solid",
+  "yellow"
+ ],
+ "usage": "class=\"pln-ico pln-ico-<nama>-<varian>\"",
+ "categories": [
+  {
+   "id": "tata-kelola",
+   "label": "Tata Kelola & Kepatuhan",
+   "icons": [
+    "gavel",
+    "policy",
+    "institution",
+    "verified",
+    "approval",
+    "certificate",
+    "compliance",
+    "rule"
+   ]
+  },
+  {
+   "id": "keuangan",
+   "label": "Keuangan & Bisnis",
+   "icons": [
+    "payments",
+    "wallet",
+    "trend-up",
+    "invoice",
+    "savings",
+    "quotation",
+    "exchange",
+    "price-check"
+   ]
+  },
+  {
+   "id": "sdm",
+   "label": "SDM & Organisasi",
+   "icons": [
+    "person",
+    "id-badge",
+    "training",
+    "team",
+    "supervisor",
+    "mindset",
+    "award",
+    "briefcase"
+   ]
+  },
+  {
+   "id": "operasi",
+   "label": "Operasi & Proyek",
+   "icons": [
+    "engineer",
+    "construction",
+    "task-done",
+    "assignment",
+    "timeline",
+    "schedule",
+    "inventory",
+    "manufacturing"
+   ]
+  },
+  {
+   "id": "energi",
+   "label": "Energi & Ketenagalistrikan",
+   "icons": [
+    "bolt",
+    "kwh-meter",
+    "solar",
+    "wind",
+    "electrical",
+    "ev-charging",
+    "energy-saving",
+    "power-plug"
+   ]
+  },
+  {
+   "id": "digital",
+   "label": "Digital & TI",
+   "icons": [
+    "cloud",
+    "data-center",
+    "hub",
+    "chip",
+    "router",
+    "api",
+    "terminal",
+    "ai-bot"
+   ]
+  },
+  {
+   "id": "data",
+   "label": "Data & Analitik",
+   "icons": [
+    "analytics",
+    "insights",
+    "query-stats",
+    "dashboard",
+    "database",
+    "pie-chart",
+    "bar-chart",
+    "data-explore"
+   ]
+  },
+  {
+   "id": "keamanan",
+   "label": "Keamanan & Risiko",
+   "icons": [
+    "security",
+    "lock",
+    "protection",
+    "incident",
+    "k3",
+    "crisis",
+    "encrypted",
+    "cyber-lock"
+   ]
+  },
+  {
+   "id": "pelanggan",
+   "label": "Pelanggan & Layanan",
+   "icons": [
+    "support",
+    "storefront",
+    "thumb-up",
+    "reviews",
+    "contact",
+    "loyalty",
+    "satisfaction",
+    "service"
+   ]
+  },
+  {
+   "id": "komunikasi",
+   "label": "Komunikasi & Kolaborasi",
+   "icons": [
+    "forum",
+    "campaign",
+    "mail",
+    "video-call",
+    "share",
+    "notification",
+    "chat",
+    "collaboration"
+   ]
+  },
+  {
+   "id": "esg",
+   "label": "Lingkungan & ESG",
+   "icons": [
+    "eco",
+    "recycling",
+    "water",
+    "forest",
+    "global",
+    "co2",
+    "community",
+    "sustainability"
+   ]
+  },
+  {
+   "id": "strategi",
+   "label": "Strategi & Inovasi",
+   "icons": [
+    "launch",
+    "idea",
+    "milestone",
+    "explore",
+    "innovation",
+    "focus",
+    "integration",
+    "trophy"
+   ]
+  }
+ ]
+}

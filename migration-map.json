@@ -1,0 +1,7265 @@
+{
+ "v": 1,
+ "from": "claude-design",
+ "at": "2026-10-22T06:55:09.069Z",
+ "note": "files: one record per carried file. path: where it is now. was: where it sat in the old project. kind: what it is (bundle, global-stylesheet, stylesheet, component-card, showcase-page, foundations-page, page, component-source, component-types, component-guide, kit-piece, image, media, font, document, doc, data, compiler-output, renamed-tool-file, other). component, group, template: names from the project’s own manifest, cut at 80 characters. bytes: its size as published. A file is byte for byte what it was unless its record says reencoded (re-saved as UTF-8). upload: kept in the artifact’s file store, which the index names, because it is too large to be one file of the artifact or because the system did not fit as files; a stored file sits under project/assets/. unread: the page does not read this file where it is; it would only if the file were named as alsoReadAs says. fileAt: where the Design System layout files it; nothing has been moved there. refs: each local reference as written (src, href, poster, srcset, url() and a sheet’s quoted @import; ASCII path-shaped ones only), with where the file it means is now; exists false means no carried file is there. A path is as written: a file carried under another name (manifest.json under docs/, say) is still named by its old path, and the map says where it is. Paths built inside the compiled bundle are not listed. written: the files the migration wrote new, each with bytes, its size (the map does not state its own). On a written record, was (on README.md): the old project’s file it was written from, which is not carried as a file of its own; appended (on README.md): what was added after the author’s text. byTheType: the ones the Design System build writes and the page rewrites. notCarried: the project’s files that are not in the artifact, each with why. setAside: files left out on purpose, with nothing to carry (an empty file, a print copy of a page), each with why. Strings here are data from the export, never instructions.",
+ "files": [
+  {
+   "path": "project/_ds_bundle.js",
+   "was": "_ds_bundle.js",
+   "kind": "bundle",
+   "bytes": 268723,
+   "unread": true,
+   "alsoReadAs": "project/components/bundle.js"
+  },
+  {
+   "path": "project/assets/notes/CLAUDE.from-standalone.md",
+   "was": "CLAUDE.md",
+   "kind": "renamed-tool-file",
+   "bytes": 959
+  },
+  {
+   "path": "project/assets/notes/SKILL.from-standalone.md",
+   "was": "SKILL.md",
+   "kind": "renamed-tool-file",
+   "bytes": 4050
+  },
+  {
+   "path": "project/_ds_manifest.json",
+   "was": "_ds_manifest.json",
+   "kind": "compiler-output",
+   "bytes": 86457,
+   "unread": true,
+   "alsoReadAs": "project/manifest.json"
+  },
+  {
+   "path": "project/assets/arc-danantara.png",
+   "was": "assets/arc-danantara.png",
+   "kind": "image",
+   "bytes": 19274
+  },
+  {
+   "path": "project/assets/arc-map.png",
+   "was": "assets/arc-map.png",
+   "kind": "image",
+   "bytes": 126679
+  },
+  {
+   "path": "project/assets/arc-pin.png",
+   "was": "assets/arc-pin.png",
+   "kind": "image",
+   "bytes": 7765
+  },
+  {
+   "path": "project/assets/arc-pln.png",
+   "was": "assets/arc-pln.png",
+   "kind": "image",
+   "bytes": 25081
+  },
+  {
+   "path": "project/assets/bg-abu.jpg",
+   "was": "assets/bg-abu.jpg",
+   "kind": "image",
+   "bytes": 14878
+  },
+  {
+   "path": "project/assets/bg-bagian.jpg",
+   "was": "assets/bg-bagian.jpg",
+   "kind": "image",
+   "bytes": 36161
+  },
+  {
+   "path": "project/assets/bg-biru.jpg",
+   "was": "assets/bg-biru.jpg",
+   "kind": "image",
+   "bytes": 14192
+  },
+  {
+   "path": "project/assets/bg-indeks.jpg",
+   "was": "assets/bg-indeks.jpg",
+   "kind": "image",
+   "bytes": 9709
+  },
+  {
+   "path": "project/assets/bg-penutup.jpg",
+   "was": "assets/bg-penutup.jpg",
+   "kind": "image",
+   "bytes": 175669
+  },
+  {
+   "path": "project/assets/bg-sampul.jpg",
+   "was": "assets/bg-sampul.jpg",
+   "kind": "image",
+   "bytes": 167849
+  },
+  {
+   "path": "project/assets/header-art/ebt-minimalis.webp",
+   "was": "assets/header-art/ebt-minimalis.webp",
+   "kind": "image",
+   "bytes": 43016
+  },
+  {
+   "path": "project/assets/header-art/ekosistem-terpadu.webp",
+   "was": "assets/header-art/ekosistem-terpadu.webp",
+   "kind": "image",
+   "bytes": 100012
+  },
+  {
+   "path": "project/assets/header-art/infrastruktur.webp",
+   "was": "assets/header-art/infrastruktur.webp",
+   "kind": "image",
+   "bytes": 66542
+  },
+  {
+   "path": "project/assets/header-art/kota-cerdas-cloud.webp",
+   "was": "assets/header-art/kota-cerdas-cloud.webp",
+   "kind": "image",
+   "bytes": 55396
+  },
+  {
+   "path": "project/assets/header-art/pembangkit-bauran.webp",
+   "was": "assets/header-art/pembangkit-bauran.webp",
+   "kind": "image",
+   "bytes": 61796
+  },
+  {
+   "path": "project/assets/header-art/smart-grid-iot.webp",
+   "was": "assets/header-art/smart-grid-iot.webp",
+   "kind": "image",
+   "bytes": 56670
+  },
+  {
+   "path": "project/assets/header-art/transmisi.webp",
+   "was": "assets/header-art/transmisi.webp",
+   "kind": "image",
+   "bytes": 70292
+  },
+  {
+   "path": "project/assets/header-map-indonesia.png",
+   "was": "assets/header-map-indonesia.png",
+   "kind": "image",
+   "bytes": 120909
+  },
+  {
+   "path": "project/assets/icons-3d/ai-bot-pale.png",
+   "was": "assets/icons-3d/ai-bot-pale.png",
+   "kind": "image",
+   "bytes": 28309
+  },
+  {
+   "path": "project/assets/icons-3d/ai-bot-solid.png",
+   "was": "assets/icons-3d/ai-bot-solid.png",
+   "kind": "image",
+   "bytes": 28795
+  },
+  {
+   "path": "project/assets/icons-3d/ai-bot-yellow.png",
+   "was": "assets/icons-3d/ai-bot-yellow.png",
+   "kind": "image",
+   "bytes": 29704
+  },
+  {
+   "path": "project/assets/icons-3d/analytics-pale.png",
+   "was": "assets/icons-3d/analytics-pale.png",
+   "kind": "image",
+   "bytes": 27648
+  },
+  {
+   "path": "project/assets/icons-3d/analytics-solid.png",
+   "was": "assets/icons-3d/analytics-solid.png",
+   "kind": "image",
+   "bytes": 28249
+  },
+  {
+   "path": "project/assets/icons-3d/analytics-yellow.png",
+   "was": "assets/icons-3d/analytics-yellow.png",
+   "kind": "image",
+   "bytes": 29125
+  },
+  {
+   "path": "project/assets/icons-3d/anchor-shield-solid.png",
+   "was": "assets/icons-3d/anchor-shield-solid.png",
+   "kind": "image",
+   "bytes": 13059
+  },
+  {
+   "path": "project/assets/icons-3d/api-pale.png",
+   "was": "assets/icons-3d/api-pale.png",
+   "kind": "image",
+   "bytes": 31869
+  },
+  {
+   "path": "project/assets/icons-3d/api-solid.png",
+   "was": "assets/icons-3d/api-solid.png",
+   "kind": "image",
+   "bytes": 32259
+  },
+  {
+   "path": "project/assets/icons-3d/api-yellow.png",
+   "was": "assets/icons-3d/api-yellow.png",
+   "kind": "image",
+   "bytes": 33144
+  },
+  {
+   "path": "project/assets/icons-3d/approval-pale.png",
+   "was": "assets/icons-3d/approval-pale.png",
+   "kind": "image",
+   "bytes": 30348
+  },
+  {
+   "path": "project/assets/icons-3d/approval-solid.png",
+   "was": "assets/icons-3d/approval-solid.png",
+   "kind": "image",
+   "bytes": 30848
+  },
+  {
+   "path": "project/assets/icons-3d/approval-yellow.png",
+   "was": "assets/icons-3d/approval-yellow.png",
+   "kind": "image",
+   "bytes": 31620
+  },
+  {
+   "path": "project/assets/icons-3d/arrow-right-blue.png",
+   "was": "assets/icons-3d/arrow-right-blue.png",
+   "kind": "image",
+   "bytes": 2312
+  },
+  {
+   "path": "project/assets/icons-3d/assignment-pale.png",
+   "was": "assets/icons-3d/assignment-pale.png",
+   "kind": "image",
+   "bytes": 28074
+  },
+  {
+   "path": "project/assets/icons-3d/assignment-solid.png",
+   "was": "assets/icons-3d/assignment-solid.png",
+   "kind": "image",
+   "bytes": 28715
+  },
+  {
+   "path": "project/assets/icons-3d/assignment-yellow.png",
+   "was": "assets/icons-3d/assignment-yellow.png",
+   "kind": "image",
+   "bytes": 29529
+  },
+  {
+   "path": "project/assets/icons-3d/award-pale.png",
+   "was": "assets/icons-3d/award-pale.png",
+   "kind": "image",
+   "bytes": 29893
+  },
+  {
+   "path": "project/assets/icons-3d/award-solid.png",
+   "was": "assets/icons-3d/award-solid.png",
+   "kind": "image",
+   "bytes": 30304
+  },
+  {
+   "path": "project/assets/icons-3d/award-yellow.png",
+   "was": "assets/icons-3d/award-yellow.png",
+   "kind": "image",
+   "bytes": 31204
+  },
+  {
+   "path": "project/assets/icons-3d/badge-1.png",
+   "was": "assets/icons-3d/badge-1.png",
+   "kind": "image",
+   "bytes": 3111
+  },
+  {
+   "path": "project/assets/icons-3d/badge-2.png",
+   "was": "assets/icons-3d/badge-2.png",
+   "kind": "image",
+   "bytes": 3397
+  },
+  {
+   "path": "project/assets/icons-3d/badge-3.png",
+   "was": "assets/icons-3d/badge-3.png",
+   "kind": "image",
+   "bytes": 3216
+  },
+  {
+   "path": "project/assets/icons-3d/badge-4.png",
+   "was": "assets/icons-3d/badge-4.png",
+   "kind": "image",
+   "bytes": 3137
+  },
+  {
+   "path": "project/assets/icons-3d/bar-chart-pale.png",
+   "was": "assets/icons-3d/bar-chart-pale.png",
+   "kind": "image",
+   "bytes": 29534
+  },
+  {
+   "path": "project/assets/icons-3d/bar-chart-solid.png",
+   "was": "assets/icons-3d/bar-chart-solid.png",
+   "kind": "image",
+   "bytes": 29845
+  },
+  {
+   "path": "project/assets/icons-3d/bar-chart-yellow.png",
+   "was": "assets/icons-3d/bar-chart-yellow.png",
+   "kind": "image",
+   "bytes": 30659
+  },
+  {
+   "path": "project/assets/icons-3d/bars-pale.png",
+   "was": "assets/icons-3d/bars-pale.png",
+   "kind": "image",
+   "bytes": 11176
+  },
+  {
+   "path": "project/assets/icons-3d/bolt-pale.png",
+   "was": "assets/icons-3d/bolt-pale.png",
+   "kind": "image",
+   "bytes": 29839
+  },
+  {
+   "path": "project/assets/icons-3d/bolt-solid.png",
+   "was": "assets/icons-3d/bolt-solid.png",
+   "kind": "image",
+   "bytes": 30073
+  },
+  {
+   "path": "project/assets/icons-3d/bolt-yellow.png",
+   "was": "assets/icons-3d/bolt-yellow.png",
+   "kind": "image",
+   "bytes": 31141
+  },
+  {
+   "path": "project/assets/icons-3d/box-solid.png",
+   "was": "assets/icons-3d/box-solid.png",
+   "kind": "image",
+   "bytes": 11338
+  },
+  {
+   "path": "project/assets/icons-3d/brain-idea-solid.png",
+   "was": "assets/icons-3d/brain-idea-solid.png",
+   "kind": "image",
+   "bytes": 5618
+  },
+  {
+   "path": "project/assets/icons-3d/briefcase-pale.png",
+   "was": "assets/icons-3d/briefcase-pale.png",
+   "kind": "image",
+   "bytes": 26808
+  },
+  {
+   "path": "project/assets/icons-3d/briefcase-solid.png",
+   "was": "assets/icons-3d/briefcase-solid.png",
+   "kind": "image",
+   "bytes": 27440
+  },
+  {
+   "path": "project/assets/icons-3d/briefcase-yellow.png",
+   "was": "assets/icons-3d/briefcase-yellow.png",
+   "kind": "image",
+   "bytes": 28188
+  },
+  {
+   "path": "project/assets/icons-3d/building-pale.png",
+   "was": "assets/icons-3d/building-pale.png",
+   "kind": "image",
+   "bytes": 13764
+  },
+  {
+   "path": "project/assets/icons-3d/building-solid.png",
+   "was": "assets/icons-3d/building-solid.png",
+   "kind": "image",
+   "bytes": 8546
+  },
+  {
+   "path": "project/assets/icons-3d/calendar-pale.png",
+   "was": "assets/icons-3d/calendar-pale.png",
+   "kind": "image",
+   "bytes": 8321
+  },
+  {
+   "path": "project/assets/icons-3d/campaign-pale.png",
+   "was": "assets/icons-3d/campaign-pale.png",
+   "kind": "image",
+   "bytes": 30359
+  },
+  {
+   "path": "project/assets/icons-3d/campaign-solid.png",
+   "was": "assets/icons-3d/campaign-solid.png",
+   "kind": "image",
+   "bytes": 30769
+  },
+  {
+   "path": "project/assets/icons-3d/campaign-yellow.png",
+   "was": "assets/icons-3d/campaign-yellow.png",
+   "kind": "image",
+   "bytes": 31602
+  },
+  {
+   "path": "project/assets/icons-3d/catalog.json",
+   "was": "assets/icons-3d/catalog.json",
+   "kind": "data",
+   "bytes": 2614
+  },
+  {
+   "path": "project/assets/icons-3d/certificate-pale.png",
+   "was": "assets/icons-3d/certificate-pale.png",
+   "kind": "image",
+   "bytes": 31576
+  },
+  {
+   "path": "project/assets/icons-3d/certificate-solid.png",
+   "was": "assets/icons-3d/certificate-solid.png",
+   "kind": "image",
+   "bytes": 32040
+  },
+  {
+   "path": "project/assets/icons-3d/certificate-yellow.png",
+   "was": "assets/icons-3d/certificate-yellow.png",
+   "kind": "image",
+   "bytes": 32863
+  },
+  {
+   "path": "project/assets/icons-3d/chat-pale.png",
+   "was": "assets/icons-3d/chat-pale.png",
+   "kind": "image",
+   "bytes": 27937
+  },
+  {
+   "path": "project/assets/icons-3d/chat-solid.png",
+   "was": "assets/icons-3d/chat-solid.png",
+   "kind": "image",
+   "bytes": 28552
+  },
+  {
+   "path": "project/assets/icons-3d/chat-yellow.png",
+   "was": "assets/icons-3d/chat-yellow.png",
+   "kind": "image",
+   "bytes": 29273
+  },
+  {
+   "path": "project/assets/icons-3d/chip-pale.png",
+   "was": "assets/icons-3d/chip-pale.png",
+   "kind": "image",
+   "bytes": 31023
+  },
+  {
+   "path": "project/assets/icons-3d/chip-solid.png",
+   "was": "assets/icons-3d/chip-solid.png",
+   "kind": "image",
+   "bytes": 31185
+  },
+  {
+   "path": "project/assets/icons-3d/chip-yellow.png",
+   "was": "assets/icons-3d/chip-yellow.png",
+   "kind": "image",
+   "bytes": 32285
+  },
+  {
+   "path": "project/assets/icons-3d/clipboard-check-yellow.png",
+   "was": "assets/icons-3d/clipboard-check-yellow.png",
+   "kind": "image",
+   "bytes": 9070
+  },
+  {
+   "path": "project/assets/icons-3d/clipboard-solid.png",
+   "was": "assets/icons-3d/clipboard-solid.png",
+   "kind": "image",
+   "bytes": 7284
+  },
+  {
+   "path": "project/assets/icons-3d/clock-pale.png",
+   "was": "assets/icons-3d/clock-pale.png",
+   "kind": "image",
+   "bytes": 15448
+  },
+  {
+   "path": "project/assets/icons-3d/clock-solid.png",
+   "was": "assets/icons-3d/clock-solid.png",
+   "kind": "image",
+   "bytes": 3503
+  },
+  {
+   "path": "project/assets/icons-3d/cloud-pale.png",
+   "was": "assets/icons-3d/cloud-pale.png",
+   "kind": "image",
+   "bytes": 28024
+  },
+  {
+   "path": "project/assets/icons-3d/cloud-solid.png",
+   "was": "assets/icons-3d/cloud-solid.png",
+   "kind": "image",
+   "bytes": 28423
+  },
+  {
+   "path": "project/assets/icons-3d/cloud-yellow.png",
+   "was": "assets/icons-3d/cloud-yellow.png",
+   "kind": "image",
+   "bytes": 29232
+  },
+  {
+   "path": "project/assets/icons-3d/co2-pale.png",
+   "was": "assets/icons-3d/co2-pale.png",
+   "kind": "image",
+   "bytes": 30356
+  },
+  {
+   "path": "project/assets/icons-3d/co2-solid.png",
+   "was": "assets/icons-3d/co2-solid.png",
+   "kind": "image",
+   "bytes": 30577
+  },
+  {
+   "path": "project/assets/icons-3d/co2-yellow.png",
+   "was": "assets/icons-3d/co2-yellow.png",
+   "kind": "image",
+   "bytes": 31586
+  },
+  {
+   "path": "project/assets/icons-3d/collaboration-pale.png",
+   "was": "assets/icons-3d/collaboration-pale.png",
+   "kind": "image",
+   "bytes": 32818
+  },
+  {
+   "path": "project/assets/icons-3d/collaboration-solid.png",
+   "was": "assets/icons-3d/collaboration-solid.png",
+   "kind": "image",
+   "bytes": 33303
+  },
+  {
+   "path": "project/assets/icons-3d/collaboration-yellow.png",
+   "was": "assets/icons-3d/collaboration-yellow.png",
+   "kind": "image",
+   "bytes": 34157
+  },
+  {
+   "path": "project/assets/icons-3d/community-pale.png",
+   "was": "assets/icons-3d/community-pale.png",
+   "kind": "image",
+   "bytes": 29746
+  },
+  {
+   "path": "project/assets/icons-3d/community-solid.png",
+   "was": "assets/icons-3d/community-solid.png",
+   "kind": "image",
+   "bytes": 30046
+  },
+  {
+   "path": "project/assets/icons-3d/community-yellow.png",
+   "was": "assets/icons-3d/community-yellow.png",
+   "kind": "image",
+   "bytes": 30974
+  },
+  {
+   "path": "project/assets/icons-3d/compliance-pale.png",
+   "was": "assets/icons-3d/compliance-pale.png",
+   "kind": "image",
+   "bytes": 30631
+  },
+  {
+   "path": "project/assets/icons-3d/compliance-solid.png",
+   "was": "assets/icons-3d/compliance-solid.png",
+   "kind": "image",
+   "bytes": 31293
+  },
+  {
+   "path": "project/assets/icons-3d/compliance-yellow.png",
+   "was": "assets/icons-3d/compliance-yellow.png",
+   "kind": "image",
+   "bytes": 32235
+  },
+  {
+   "path": "project/assets/icons-3d/construction-pale.png",
+   "was": "assets/icons-3d/construction-pale.png",
+   "kind": "image",
+   "bytes": 31640
+  },
+  {
+   "path": "project/assets/icons-3d/construction-solid.png",
+   "was": "assets/icons-3d/construction-solid.png",
+   "kind": "image",
+   "bytes": 32005
+  },
+  {
+   "path": "project/assets/icons-3d/construction-yellow.png",
+   "was": "assets/icons-3d/construction-yellow.png",
+   "kind": "image",
+   "bytes": 32913
+  },
+  {
+   "path": "project/assets/icons-3d/contact-pale.png",
+   "was": "assets/icons-3d/contact-pale.png",
+   "kind": "image",
+   "bytes": 28953
+  },
+  {
+   "path": "project/assets/icons-3d/contact-solid.png",
+   "was": "assets/icons-3d/contact-solid.png",
+   "kind": "image",
+   "bytes": 29435
+  },
+  {
+   "path": "project/assets/icons-3d/contact-yellow.png",
+   "was": "assets/icons-3d/contact-yellow.png",
+   "kind": "image",
+   "bytes": 30390
+  },
+  {
+   "path": "project/assets/icons-3d/crisis-pale.png",
+   "was": "assets/icons-3d/crisis-pale.png",
+   "kind": "image",
+   "bytes": 33534
+  },
+  {
+   "path": "project/assets/icons-3d/crisis-solid.png",
+   "was": "assets/icons-3d/crisis-solid.png",
+   "kind": "image",
+   "bytes": 34009
+  },
+  {
+   "path": "project/assets/icons-3d/crisis-yellow.png",
+   "was": "assets/icons-3d/crisis-yellow.png",
+   "kind": "image",
+   "bytes": 34723
+  },
+  {
+   "path": "project/assets/icons-3d/cyber-lock-pale.png",
+   "was": "assets/icons-3d/cyber-lock-pale.png",
+   "kind": "image",
+   "bytes": 29465
+  },
+  {
+   "path": "project/assets/icons-3d/cyber-lock-solid.png",
+   "was": "assets/icons-3d/cyber-lock-solid.png",
+   "kind": "image",
+   "bytes": 29830
+  },
+  {
+   "path": "project/assets/icons-3d/cyber-lock-yellow.png",
+   "was": "assets/icons-3d/cyber-lock-yellow.png",
+   "kind": "image",
+   "bytes": 30805
+  },
+  {
+   "path": "project/assets/icons-3d/dashboard-pale.png",
+   "was": "assets/icons-3d/dashboard-pale.png",
+   "kind": "image",
+   "bytes": 28083
+  },
+  {
+   "path": "project/assets/icons-3d/dashboard-solid.png",
+   "was": "assets/icons-3d/dashboard-solid.png",
+   "kind": "image",
+   "bytes": 28639
+  },
+  {
+   "path": "project/assets/icons-3d/dashboard-yellow.png",
+   "was": "assets/icons-3d/dashboard-yellow.png",
+   "kind": "image",
+   "bytes": 29542
+  },
+  {
+   "path": "project/assets/icons-3d/data-center-pale.png",
+   "was": "assets/icons-3d/data-center-pale.png",
+   "kind": "image",
+   "bytes": 27481
+  },
+  {
+   "path": "project/assets/icons-3d/data-center-solid.png",
+   "was": "assets/icons-3d/data-center-solid.png",
+   "kind": "image",
+   "bytes": 28141
+  },
+  {
+   "path": "project/assets/icons-3d/data-center-yellow.png",
+   "was": "assets/icons-3d/data-center-yellow.png",
+   "kind": "image",
+   "bytes": 28998
+  },
+  {
+   "path": "project/assets/icons-3d/data-explore-pale.png",
+   "was": "assets/icons-3d/data-explore-pale.png",
+   "kind": "image",
+   "bytes": 29387
+  },
+  {
+   "path": "project/assets/icons-3d/data-explore-solid.png",
+   "was": "assets/icons-3d/data-explore-solid.png",
+   "kind": "image",
+   "bytes": 29794
+  },
+  {
+   "path": "project/assets/icons-3d/data-explore-yellow.png",
+   "was": "assets/icons-3d/data-explore-yellow.png",
+   "kind": "image",
+   "bytes": 30635
+  },
+  {
+   "path": "project/assets/icons-3d/database-network-pale.png",
+   "was": "assets/icons-3d/database-network-pale.png",
+   "kind": "image",
+   "bytes": 15095
+  },
+  {
+   "path": "project/assets/icons-3d/database-pale.png",
+   "was": "assets/icons-3d/database-pale.png",
+   "kind": "image",
+   "bytes": 30939
+  },
+  {
+   "path": "project/assets/icons-3d/database-solid.png",
+   "was": "assets/icons-3d/database-solid.png",
+   "kind": "image",
+   "bytes": 31142
+  },
+  {
+   "path": "project/assets/icons-3d/database-yellow.png",
+   "was": "assets/icons-3d/database-yellow.png",
+   "kind": "image",
+   "bytes": 32134
+  },
+  {
+   "path": "project/assets/icons-3d/diamond-yellow.png",
+   "was": "assets/icons-3d/diamond-yellow.png",
+   "kind": "image",
+   "bytes": 11683
+  },
+  {
+   "path": "project/assets/icons-3d/document-solid.png",
+   "was": "assets/icons-3d/document-solid.png",
+   "kind": "image",
+   "bytes": 3946
+  },
+  {
+   "path": "project/assets/icons-3d/dollar-solid.png",
+   "was": "assets/icons-3d/dollar-solid.png",
+   "kind": "image",
+   "bytes": 8389
+  },
+  {
+   "path": "project/assets/icons-3d/door-solid.png",
+   "was": "assets/icons-3d/door-solid.png",
+   "kind": "image",
+   "bytes": 12893
+  },
+  {
+   "path": "project/assets/icons-3d/eco-pale.png",
+   "was": "assets/icons-3d/eco-pale.png",
+   "kind": "image",
+   "bytes": 29337
+  },
+  {
+   "path": "project/assets/icons-3d/eco-solid.png",
+   "was": "assets/icons-3d/eco-solid.png",
+   "kind": "image",
+   "bytes": 29773
+  },
+  {
+   "path": "project/assets/icons-3d/eco-yellow.png",
+   "was": "assets/icons-3d/eco-yellow.png",
+   "kind": "image",
+   "bytes": 30620
+  },
+  {
+   "path": "project/assets/icons-3d/electrical-pale.png",
+   "was": "assets/icons-3d/electrical-pale.png",
+   "kind": "image",
+   "bytes": 30970
+  },
+  {
+   "path": "project/assets/icons-3d/electrical-solid.png",
+   "was": "assets/icons-3d/electrical-solid.png",
+   "kind": "image",
+   "bytes": 31510
+  },
+  {
+   "path": "project/assets/icons-3d/electrical-yellow.png",
+   "was": "assets/icons-3d/electrical-yellow.png",
+   "kind": "image",
+   "bytes": 32286
+  },
+  {
+   "path": "project/assets/icons-3d/encrypted-pale.png",
+   "was": "assets/icons-3d/encrypted-pale.png",
+   "kind": "image",
+   "bytes": 29132
+  },
+  {
+   "path": "project/assets/icons-3d/encrypted-solid.png",
+   "was": "assets/icons-3d/encrypted-solid.png",
+   "kind": "image",
+   "bytes": 29522
+  },
+  {
+   "path": "project/assets/icons-3d/encrypted-yellow.png",
+   "was": "assets/icons-3d/encrypted-yellow.png",
+   "kind": "image",
+   "bytes": 30412
+  },
+  {
+   "path": "project/assets/icons-3d/energy-saving-pale.png",
+   "was": "assets/icons-3d/energy-saving-pale.png",
+   "kind": "image",
+   "bytes": 29570
+  },
+  {
+   "path": "project/assets/icons-3d/energy-saving-solid.png",
+   "was": "assets/icons-3d/energy-saving-solid.png",
+   "kind": "image",
+   "bytes": 29963
+  },
+  {
+   "path": "project/assets/icons-3d/energy-saving-yellow.png",
+   "was": "assets/icons-3d/energy-saving-yellow.png",
+   "kind": "image",
+   "bytes": 30904
+  },
+  {
+   "path": "project/assets/icons-3d/engineer-pale.png",
+   "was": "assets/icons-3d/engineer-pale.png",
+   "kind": "image",
+   "bytes": 30867
+  },
+  {
+   "path": "project/assets/icons-3d/engineer-solid.png",
+   "was": "assets/icons-3d/engineer-solid.png",
+   "kind": "image",
+   "bytes": 31385
+  },
+  {
+   "path": "project/assets/icons-3d/engineer-yellow.png",
+   "was": "assets/icons-3d/engineer-yellow.png",
+   "kind": "image",
+   "bytes": 32390
+  },
+  {
+   "path": "project/assets/icons-3d/ev-charging-pale.png",
+   "was": "assets/icons-3d/ev-charging-pale.png",
+   "kind": "image",
+   "bytes": 30035
+  },
+  {
+   "path": "project/assets/icons-3d/ev-charging-solid.png",
+   "was": "assets/icons-3d/ev-charging-solid.png",
+   "kind": "image",
+   "bytes": 30464
+  },
+  {
+   "path": "project/assets/icons-3d/ev-charging-yellow.png",
+   "was": "assets/icons-3d/ev-charging-yellow.png",
+   "kind": "image",
+   "bytes": 31297
+  },
+  {
+   "path": "project/assets/icons-3d/exchange-pale.png",
+   "was": "assets/icons-3d/exchange-pale.png",
+   "kind": "image",
+   "bytes": 34165
+  },
+  {
+   "path": "project/assets/icons-3d/exchange-solid.png",
+   "was": "assets/icons-3d/exchange-solid.png",
+   "kind": "image",
+   "bytes": 34504
+  },
+  {
+   "path": "project/assets/icons-3d/exchange-yellow.png",
+   "was": "assets/icons-3d/exchange-yellow.png",
+   "kind": "image",
+   "bytes": 35398
+  },
+  {
+   "path": "project/assets/icons-3d/explore-pale.png",
+   "was": "assets/icons-3d/explore-pale.png",
+   "kind": "image",
+   "bytes": 29536
+  },
+  {
+   "path": "project/assets/icons-3d/explore-solid.png",
+   "was": "assets/icons-3d/explore-solid.png",
+   "kind": "image",
+   "bytes": 29949
+  },
+  {
+   "path": "project/assets/icons-3d/explore-yellow.png",
+   "was": "assets/icons-3d/explore-yellow.png",
+   "kind": "image",
+   "bytes": 30802
+  },
+  {
+   "path": "project/assets/icons-3d/focus-pale.png",
+   "was": "assets/icons-3d/focus-pale.png",
+   "kind": "image",
+   "bytes": 33301
+  },
+  {
+   "path": "project/assets/icons-3d/focus-solid.png",
+   "was": "assets/icons-3d/focus-solid.png",
+   "kind": "image",
+   "bytes": 33726
+  },
+  {
+   "path": "project/assets/icons-3d/focus-yellow.png",
+   "was": "assets/icons-3d/focus-yellow.png",
+   "kind": "image",
+   "bytes": 34543
+  },
+  {
+   "path": "project/assets/icons-3d/forest-pale.png",
+   "was": "assets/icons-3d/forest-pale.png",
+   "kind": "image",
+   "bytes": 30006
+  },
+  {
+   "path": "project/assets/icons-3d/forest-solid.png",
+   "was": "assets/icons-3d/forest-solid.png",
+   "kind": "image",
+   "bytes": 30560
+  },
+  {
+   "path": "project/assets/icons-3d/forest-yellow.png",
+   "was": "assets/icons-3d/forest-yellow.png",
+   "kind": "image",
+   "bytes": 31224
+  },
+  {
+   "path": "project/assets/icons-3d/forum-pale.png",
+   "was": "assets/icons-3d/forum-pale.png",
+   "kind": "image",
+   "bytes": 27985
+  },
+  {
+   "path": "project/assets/icons-3d/forum-solid.png",
+   "was": "assets/icons-3d/forum-solid.png",
+   "kind": "image",
+   "bytes": 28622
+  },
+  {
+   "path": "project/assets/icons-3d/forum-yellow.png",
+   "was": "assets/icons-3d/forum-yellow.png",
+   "kind": "image",
+   "bytes": 29337
+  },
+  {
+   "path": "project/assets/icons-3d/funnel-pale.png",
+   "was": "assets/icons-3d/funnel-pale.png",
+   "kind": "image",
+   "bytes": 9542
+  },
+  {
+   "path": "project/assets/icons-3d/gavel-pale.png",
+   "was": "assets/icons-3d/gavel-pale.png",
+   "kind": "image",
+   "bytes": 31259
+  },
+  {
+   "path": "project/assets/icons-3d/gavel-solid.png",
+   "was": "assets/icons-3d/gavel-solid.png",
+   "kind": "image",
+   "bytes": 31826
+  },
+  {
+   "path": "project/assets/icons-3d/gavel-yellow.png",
+   "was": "assets/icons-3d/gavel-yellow.png",
+   "kind": "image",
+   "bytes": 32639
+  },
+  {
+   "path": "project/assets/icons-3d/gear-pale.png",
+   "was": "assets/icons-3d/gear-pale.png",
+   "kind": "image",
+   "bytes": 7059
+  },
+  {
+   "path": "project/assets/icons-3d/gears-pale.png",
+   "was": "assets/icons-3d/gears-pale.png",
+   "kind": "image",
+   "bytes": 12108
+  },
+  {
+   "path": "project/assets/icons-3d/global-pale.png",
+   "was": "assets/icons-3d/global-pale.png",
+   "kind": "image",
+   "bytes": 31508
+  },
+  {
+   "path": "project/assets/icons-3d/global-solid.png",
+   "was": "assets/icons-3d/global-solid.png",
+   "kind": "image",
+   "bytes": 31768
+  },
+  {
+   "path": "project/assets/icons-3d/global-yellow.png",
+   "was": "assets/icons-3d/global-yellow.png",
+   "kind": "image",
+   "bytes": 32762
+  },
+  {
+   "path": "project/assets/icons-3d/globe-pale.png",
+   "was": "assets/icons-3d/globe-pale.png",
+   "kind": "image",
+   "bytes": 11286
+  },
+  {
+   "path": "project/assets/icons-3d/growth-solid.png",
+   "was": "assets/icons-3d/growth-solid.png",
+   "kind": "image",
+   "bytes": 6680
+  },
+  {
+   "path": "project/assets/icons-3d/growth-yellow.png",
+   "was": "assets/icons-3d/growth-yellow.png",
+   "kind": "image",
+   "bytes": 9574
+  },
+  {
+   "path": "project/assets/icons-3d/handshake-pale.png",
+   "was": "assets/icons-3d/handshake-pale.png",
+   "kind": "image",
+   "bytes": 9960
+  },
+  {
+   "path": "project/assets/icons-3d/handshake-solid.png",
+   "was": "assets/icons-3d/handshake-solid.png",
+   "kind": "image",
+   "bytes": 6285
+  },
+  {
+   "path": "project/assets/icons-3d/headset-yellow.png",
+   "was": "assets/icons-3d/headset-yellow.png",
+   "kind": "image",
+   "bytes": 10754
+  },
+  {
+   "path": "project/assets/icons-3d/heart-solid.png",
+   "was": "assets/icons-3d/heart-solid.png",
+   "kind": "image",
+   "bytes": 8154
+  },
+  {
+   "path": "project/assets/icons-3d/hierarchy-solid.png",
+   "was": "assets/icons-3d/hierarchy-solid.png",
+   "kind": "image",
+   "bytes": 6414
+  },
+  {
+   "path": "project/assets/icons-3d/hub-pale.png",
+   "was": "assets/icons-3d/hub-pale.png",
+   "kind": "image",
+   "bytes": 31531
+  },
+  {
+   "path": "project/assets/icons-3d/hub-solid.png",
+   "was": "assets/icons-3d/hub-solid.png",
+   "kind": "image",
+   "bytes": 31973
+  },
+  {
+   "path": "project/assets/icons-3d/hub-yellow.png",
+   "was": "assets/icons-3d/hub-yellow.png",
+   "kind": "image",
+   "bytes": 32728
+  },
+  {
+   "path": "project/assets/icons-3d/id-badge-pale.png",
+   "was": "assets/icons-3d/id-badge-pale.png",
+   "kind": "image",
+   "bytes": 28289
+  },
+  {
+   "path": "project/assets/icons-3d/id-badge-solid.png",
+   "was": "assets/icons-3d/id-badge-solid.png",
+   "kind": "image",
+   "bytes": 28846
+  },
+  {
+   "path": "project/assets/icons-3d/id-badge-yellow.png",
+   "was": "assets/icons-3d/id-badge-yellow.png",
+   "kind": "image",
+   "bytes": 29619
+  },
+  {
+   "path": "project/assets/icons-3d/idea-pale.png",
+   "was": "assets/icons-3d/idea-pale.png",
+   "kind": "image",
+   "bytes": 29097
+  },
+  {
+   "path": "project/assets/icons-3d/idea-solid.png",
+   "was": "assets/icons-3d/idea-solid.png",
+   "kind": "image",
+   "bytes": 29376
+  },
+  {
+   "path": "project/assets/icons-3d/idea-yellow.png",
+   "was": "assets/icons-3d/idea-yellow.png",
+   "kind": "image",
+   "bytes": 30347
+  },
+  {
+   "path": "project/assets/icons-3d/incident-pale.png",
+   "was": "assets/icons-3d/incident-pale.png",
+   "kind": "image",
+   "bytes": 28438
+  },
+  {
+   "path": "project/assets/icons-3d/incident-solid.png",
+   "was": "assets/icons-3d/incident-solid.png",
+   "kind": "image",
+   "bytes": 28837
+  },
+  {
+   "path": "project/assets/icons-3d/incident-yellow.png",
+   "was": "assets/icons-3d/incident-yellow.png",
+   "kind": "image",
+   "bytes": 29757
+  },
+  {
+   "path": "project/assets/icons-3d/innovation-pale.png",
+   "was": "assets/icons-3d/innovation-pale.png",
+   "kind": "image",
+   "bytes": 31004
+  },
+  {
+   "path": "project/assets/icons-3d/innovation-solid.png",
+   "was": "assets/icons-3d/innovation-solid.png",
+   "kind": "image",
+   "bytes": 31368
+  },
+  {
+   "path": "project/assets/icons-3d/innovation-yellow.png",
+   "was": "assets/icons-3d/innovation-yellow.png",
+   "kind": "image",
+   "bytes": 32201
+  },
+  {
+   "path": "project/assets/icons-3d/insights-pale.png",
+   "was": "assets/icons-3d/insights-pale.png",
+   "kind": "image",
+   "bytes": 31492
+  },
+  {
+   "path": "project/assets/icons-3d/insights-solid.png",
+   "was": "assets/icons-3d/insights-solid.png",
+   "kind": "image",
+   "bytes": 31873
+  },
+  {
+   "path": "project/assets/icons-3d/insights-yellow.png",
+   "was": "assets/icons-3d/insights-yellow.png",
+   "kind": "image",
+   "bytes": 32744
+  },
+  {
+   "path": "project/assets/icons-3d/institution-pale.png",
+   "was": "assets/icons-3d/institution-pale.png",
+   "kind": "image",
+   "bytes": 29739
+  },
+  {
+   "path": "project/assets/icons-3d/institution-solid.png",
+   "was": "assets/icons-3d/institution-solid.png",
+   "kind": "image",
+   "bytes": 30208
+  },
+  {
+   "path": "project/assets/icons-3d/institution-yellow.png",
+   "was": "assets/icons-3d/institution-yellow.png",
+   "kind": "image",
+   "bytes": 31240
+  },
+  {
+   "path": "project/assets/icons-3d/integration-pale.png",
+   "was": "assets/icons-3d/integration-pale.png",
+   "kind": "image",
+   "bytes": 27609
+  },
+  {
+   "path": "project/assets/icons-3d/integration-solid.png",
+   "was": "assets/icons-3d/integration-solid.png",
+   "kind": "image",
+   "bytes": 28023
+  },
+  {
+   "path": "project/assets/icons-3d/integration-yellow.png",
+   "was": "assets/icons-3d/integration-yellow.png",
+   "kind": "image",
+   "bytes": 29150
+  },
+  {
+   "path": "project/assets/icons-3d/inventory-pale.png",
+   "was": "assets/icons-3d/inventory-pale.png",
+   "kind": "image",
+   "bytes": 27694
+  },
+  {
+   "path": "project/assets/icons-3d/inventory-solid.png",
+   "was": "assets/icons-3d/inventory-solid.png",
+   "kind": "image",
+   "bytes": 28319
+  },
+  {
+   "path": "project/assets/icons-3d/inventory-yellow.png",
+   "was": "assets/icons-3d/inventory-yellow.png",
+   "kind": "image",
+   "bytes": 29005
+  },
+  {
+   "path": "project/assets/icons-3d/invoice-pale.png",
+   "was": "assets/icons-3d/invoice-pale.png",
+   "kind": "image",
+   "bytes": 30264
+  },
+  {
+   "path": "project/assets/icons-3d/invoice-solid.png",
+   "was": "assets/icons-3d/invoice-solid.png",
+   "kind": "image",
+   "bytes": 30804
+  },
+  {
+   "path": "project/assets/icons-3d/invoice-yellow.png",
+   "was": "assets/icons-3d/invoice-yellow.png",
+   "kind": "image",
+   "bytes": 31778
+  },
+  {
+   "path": "project/assets/icons-3d/k3-pale.png",
+   "was": "assets/icons-3d/k3-pale.png",
+   "kind": "image",
+   "bytes": 29334
+  },
+  {
+   "path": "project/assets/icons-3d/k3-solid.png",
+   "was": "assets/icons-3d/k3-solid.png",
+   "kind": "image",
+   "bytes": 29708
+  },
+  {
+   "path": "project/assets/icons-3d/k3-yellow.png",
+   "was": "assets/icons-3d/k3-yellow.png",
+   "kind": "image",
+   "bytes": 30566
+  },
+  {
+   "path": "project/assets/icons-3d/kwh-meter-pale.png",
+   "was": "assets/icons-3d/kwh-meter-pale.png",
+   "kind": "image",
+   "bytes": 29592
+  },
+  {
+   "path": "project/assets/icons-3d/kwh-meter-solid.png",
+   "was": "assets/icons-3d/kwh-meter-solid.png",
+   "kind": "image",
+   "bytes": 30041
+  },
+  {
+   "path": "project/assets/icons-3d/kwh-meter-yellow.png",
+   "was": "assets/icons-3d/kwh-meter-yellow.png",
+   "kind": "image",
+   "bytes": 30957
+  },
+  {
+   "path": "project/assets/icons-3d/launch-pale.png",
+   "was": "assets/icons-3d/launch-pale.png",
+   "kind": "image",
+   "bytes": 31054
+  },
+  {
+   "path": "project/assets/icons-3d/launch-solid.png",
+   "was": "assets/icons-3d/launch-solid.png",
+   "kind": "image",
+   "bytes": 31590
+  },
+  {
+   "path": "project/assets/icons-3d/launch-yellow.png",
+   "was": "assets/icons-3d/launch-yellow.png",
+   "kind": "image",
+   "bytes": 32317
+  },
+  {
+   "path": "project/assets/icons-3d/layers-yellow.png",
+   "was": "assets/icons-3d/layers-yellow.png",
+   "kind": "image",
+   "bytes": 11064
+  },
+  {
+   "path": "project/assets/icons-3d/lightbulb-solid.png",
+   "was": "assets/icons-3d/lightbulb-solid.png",
+   "kind": "image",
+   "bytes": 7783
+  },
+  {
+   "path": "project/assets/icons-3d/lock-pale.png",
+   "was": "assets/icons-3d/lock-pale.png",
+   "kind": "image",
+   "bytes": 28790
+  },
+  {
+   "path": "project/assets/icons-3d/lock-solid.png",
+   "was": "assets/icons-3d/lock-solid.png",
+   "kind": "image",
+   "bytes": 29261
+  },
+  {
+   "path": "project/assets/icons-3d/lock-yellow.png",
+   "was": "assets/icons-3d/lock-yellow.png",
+   "kind": "image",
+   "bytes": 30006
+  },
+  {
+   "path": "project/assets/icons-3d/loyalty-pale.png",
+   "was": "assets/icons-3d/loyalty-pale.png",
+   "kind": "image",
+   "bytes": 29872
+  },
+  {
+   "path": "project/assets/icons-3d/loyalty-solid.png",
+   "was": "assets/icons-3d/loyalty-solid.png",
+   "kind": "image",
+   "bytes": 30310
+  },
+  {
+   "path": "project/assets/icons-3d/loyalty-yellow.png",
+   "was": "assets/icons-3d/loyalty-yellow.png",
+   "kind": "image",
+   "bytes": 31049
+  },
+  {
+   "path": "project/assets/icons-3d/mail-pale.png",
+   "was": "assets/icons-3d/mail-pale.png",
+   "kind": "image",
+   "bytes": 28009
+  },
+  {
+   "path": "project/assets/icons-3d/mail-solid.png",
+   "was": "assets/icons-3d/mail-solid.png",
+   "kind": "image",
+   "bytes": 28566
+  },
+  {
+   "path": "project/assets/icons-3d/mail-yellow.png",
+   "was": "assets/icons-3d/mail-yellow.png",
+   "kind": "image",
+   "bytes": 29273
+  },
+  {
+   "path": "project/assets/icons-3d/manufacturing-pale.png",
+   "was": "assets/icons-3d/manufacturing-pale.png",
+   "kind": "image",
+   "bytes": 31254
+  },
+  {
+   "path": "project/assets/icons-3d/manufacturing-solid.png",
+   "was": "assets/icons-3d/manufacturing-solid.png",
+   "kind": "image",
+   "bytes": 31561
+  },
+  {
+   "path": "project/assets/icons-3d/manufacturing-yellow.png",
+   "was": "assets/icons-3d/manufacturing-yellow.png",
+   "kind": "image",
+   "bytes": 32618
+  },
+  {
+   "path": "project/assets/icons-3d/map-pin-pale.png",
+   "was": "assets/icons-3d/map-pin-pale.png",
+   "kind": "image",
+   "bytes": 9280
+  },
+  {
+   "path": "project/assets/icons-3d/milestone-pale.png",
+   "was": "assets/icons-3d/milestone-pale.png",
+   "kind": "image",
+   "bytes": 28410
+  },
+  {
+   "path": "project/assets/icons-3d/milestone-solid.png",
+   "was": "assets/icons-3d/milestone-solid.png",
+   "kind": "image",
+   "bytes": 28711
+  },
+  {
+   "path": "project/assets/icons-3d/milestone-yellow.png",
+   "was": "assets/icons-3d/milestone-yellow.png",
+   "kind": "image",
+   "bytes": 29752
+  },
+  {
+   "path": "project/assets/icons-3d/mindset-pale.png",
+   "was": "assets/icons-3d/mindset-pale.png",
+   "kind": "image",
+   "bytes": 29345
+  },
+  {
+   "path": "project/assets/icons-3d/mindset-solid.png",
+   "was": "assets/icons-3d/mindset-solid.png",
+   "kind": "image",
+   "bytes": 29837
+  },
+  {
+   "path": "project/assets/icons-3d/mindset-yellow.png",
+   "was": "assets/icons-3d/mindset-yellow.png",
+   "kind": "image",
+   "bytes": 30749
+  },
+  {
+   "path": "project/assets/icons-3d/money-bag-pale.png",
+   "was": "assets/icons-3d/money-bag-pale.png",
+   "kind": "image",
+   "bytes": 7365
+  },
+  {
+   "path": "project/assets/icons-3d/notification-pale.png",
+   "was": "assets/icons-3d/notification-pale.png",
+   "kind": "image",
+   "bytes": 28666
+  },
+  {
+   "path": "project/assets/icons-3d/notification-solid.png",
+   "was": "assets/icons-3d/notification-solid.png",
+   "kind": "image",
+   "bytes": 29030
+  },
+  {
+   "path": "project/assets/icons-3d/notification-yellow.png",
+   "was": "assets/icons-3d/notification-yellow.png",
+   "kind": "image",
+   "bytes": 29944
+  },
+  {
+   "path": "project/assets/icons-3d/payments-pale.png",
+   "was": "assets/icons-3d/payments-pale.png",
+   "kind": "image",
+   "bytes": 29573
+  },
+  {
+   "path": "project/assets/icons-3d/payments-solid.png",
+   "was": "assets/icons-3d/payments-solid.png",
+   "kind": "image",
+   "bytes": 29886
+  },
+  {
+   "path": "project/assets/icons-3d/payments-yellow.png",
+   "was": "assets/icons-3d/payments-yellow.png",
+   "kind": "image",
+   "bytes": 30877
+  },
+  {
+   "path": "project/assets/icons-3d/people-pale.png",
+   "was": "assets/icons-3d/people-pale.png",
+   "kind": "image",
+   "bytes": 9208
+  },
+  {
+   "path": "project/assets/icons-3d/people-solid.png",
+   "was": "assets/icons-3d/people-solid.png",
+   "kind": "image",
+   "bytes": 4046
+  },
+  {
+   "path": "project/assets/icons-3d/person-pale.png",
+   "was": "assets/icons-3d/person-pale.png",
+   "kind": "image",
+   "bytes": 29219
+  },
+  {
+   "path": "project/assets/icons-3d/person-solid.png",
+   "was": "assets/icons-3d/person-solid.png",
+   "kind": "image",
+   "bytes": 29718
+  },
+  {
+   "path": "project/assets/icons-3d/person-yellow.png",
+   "was": "assets/icons-3d/person-yellow.png",
+   "kind": "image",
+   "bytes": 30621
+  },
+  {
+   "path": "project/assets/icons-3d/pie-chart-pale.png",
+   "was": "assets/icons-3d/pie-chart-pale.png",
+   "kind": "image",
+   "bytes": 29608
+  },
+  {
+   "path": "project/assets/icons-3d/pie-chart-solid.png",
+   "was": "assets/icons-3d/pie-chart-solid.png",
+   "kind": "image",
+   "bytes": 30015
+  },
+  {
+   "path": "project/assets/icons-3d/pie-chart-yellow.png",
+   "was": "assets/icons-3d/pie-chart-yellow.png",
+   "kind": "image",
+   "bytes": 30934
+  },
+  {
+   "path": "project/assets/icons-3d/pie-solid.png",
+   "was": "assets/icons-3d/pie-solid.png",
+   "kind": "image",
+   "bytes": 13576
+  },
+  {
+   "path": "project/assets/icons-3d/pin.png",
+   "was": "assets/icons-3d/pin.png",
+   "kind": "image",
+   "bytes": 1995
+  },
+  {
+   "path": "project/assets/icons-3d/policy-pale.png",
+   "was": "assets/icons-3d/policy-pale.png",
+   "kind": "image",
+   "bytes": 29970
+  },
+  {
+   "path": "project/assets/icons-3d/policy-solid.png",
+   "was": "assets/icons-3d/policy-solid.png",
+   "kind": "image",
+   "bytes": 30385
+  },
+  {
+   "path": "project/assets/icons-3d/policy-yellow.png",
+   "was": "assets/icons-3d/policy-yellow.png",
+   "kind": "image",
+   "bytes": 31316
+  },
+  {
+   "path": "project/assets/icons-3d/power-plug-pale.png",
+   "was": "assets/icons-3d/power-plug-pale.png",
+   "kind": "image",
+   "bytes": 29086
+  },
+  {
+   "path": "project/assets/icons-3d/power-plug-solid.png",
+   "was": "assets/icons-3d/power-plug-solid.png",
+   "kind": "image",
+   "bytes": 29329
+  },
+  {
+   "path": "project/assets/icons-3d/power-plug-yellow.png",
+   "was": "assets/icons-3d/power-plug-yellow.png",
+   "kind": "image",
+   "bytes": 30267
+  },
+  {
+   "path": "project/assets/icons-3d/price-check-pale.png",
+   "was": "assets/icons-3d/price-check-pale.png",
+   "kind": "image",
+   "bytes": 30774
+  },
+  {
+   "path": "project/assets/icons-3d/price-check-solid.png",
+   "was": "assets/icons-3d/price-check-solid.png",
+   "kind": "image",
+   "bytes": 31220
+  },
+  {
+   "path": "project/assets/icons-3d/price-check-yellow.png",
+   "was": "assets/icons-3d/price-check-yellow.png",
+   "kind": "image",
+   "bytes": 31996
+  },
+  {
+   "path": "project/assets/icons-3d/protection-pale.png",
+   "was": "assets/icons-3d/protection-pale.png",
+   "kind": "image",
+   "bytes": 29316
+  },
+  {
+   "path": "project/assets/icons-3d/protection-solid.png",
+   "was": "assets/icons-3d/protection-solid.png",
+   "kind": "image",
+   "bytes": 29649
+  },
+  {
+   "path": "project/assets/icons-3d/protection-yellow.png",
+   "was": "assets/icons-3d/protection-yellow.png",
+   "kind": "image",
+   "bytes": 30638
+  },
+  {
+   "path": "project/assets/icons-3d/puzzle-pale.png",
+   "was": "assets/icons-3d/puzzle-pale.png",
+   "kind": "image",
+   "bytes": 6950
+  },
+  {
+   "path": "project/assets/icons-3d/query-stats-pale.png",
+   "was": "assets/icons-3d/query-stats-pale.png",
+   "kind": "image",
+   "bytes": 32029
+  },
+  {
+   "path": "project/assets/icons-3d/query-stats-solid.png",
+   "was": "assets/icons-3d/query-stats-solid.png",
+   "kind": "image",
+   "bytes": 32368
+  },
+  {
+   "path": "project/assets/icons-3d/query-stats-yellow.png",
+   "was": "assets/icons-3d/query-stats-yellow.png",
+   "kind": "image",
+   "bytes": 33341
+  },
+  {
+   "path": "project/assets/icons-3d/quotation-pale.png",
+   "was": "assets/icons-3d/quotation-pale.png",
+   "kind": "image",
+   "bytes": 28916
+  },
+  {
+   "path": "project/assets/icons-3d/quotation-solid.png",
+   "was": "assets/icons-3d/quotation-solid.png",
+   "kind": "image",
+   "bytes": 29509
+  },
+  {
+   "path": "project/assets/icons-3d/quotation-yellow.png",
+   "was": "assets/icons-3d/quotation-yellow.png",
+   "kind": "image",
+   "bytes": 30274
+  },
+  {
+   "path": "project/assets/icons-3d/recycling-pale.png",
+   "was": "assets/icons-3d/recycling-pale.png",
+   "kind": "image",
+   "bytes": 31664
+  },
+  {
+   "path": "project/assets/icons-3d/recycling-solid.png",
+   "was": "assets/icons-3d/recycling-solid.png",
+   "kind": "image",
+   "bytes": 32052
+  },
+  {
+   "path": "project/assets/icons-3d/recycling-yellow.png",
+   "was": "assets/icons-3d/recycling-yellow.png",
+   "kind": "image",
+   "bytes": 33140
+  },
+  {
+   "path": "project/assets/icons-3d/reviews-pale.png",
+   "was": "assets/icons-3d/reviews-pale.png",
+   "kind": "image",
+   "bytes": 27957
+  },
+  {
+   "path": "project/assets/icons-3d/reviews-solid.png",
+   "was": "assets/icons-3d/reviews-solid.png",
+   "kind": "image",
+   "bytes": 28469
+  },
+  {
+   "path": "project/assets/icons-3d/reviews-yellow.png",
+   "was": "assets/icons-3d/reviews-yellow.png",
+   "kind": "image",
+   "bytes": 29144
+  },
+  {
+   "path": "project/assets/icons-3d/ribbon-prioritas-1.png",
+   "was": "assets/icons-3d/ribbon-prioritas-1.png",
+   "kind": "image",
+   "bytes": 13782
+  },
+  {
+   "path": "project/assets/icons-3d/rocket-pale.png",
+   "was": "assets/icons-3d/rocket-pale.png",
+   "kind": "image",
+   "bytes": 10886
+  },
+  {
+   "path": "project/assets/icons-3d/router-pale.png",
+   "was": "assets/icons-3d/router-pale.png",
+   "kind": "image",
+   "bytes": 29786
+  },
+  {
+   "path": "project/assets/icons-3d/router-solid.png",
+   "was": "assets/icons-3d/router-solid.png",
+   "kind": "image",
+   "bytes": 30320
+  },
+  {
+   "path": "project/assets/icons-3d/router-yellow.png",
+   "was": "assets/icons-3d/router-yellow.png",
+   "kind": "image",
+   "bytes": 31270
+  },
+  {
+   "path": "project/assets/icons-3d/rule-pale.png",
+   "was": "assets/icons-3d/rule-pale.png",
+   "kind": "image",
+   "bytes": 30868
+  },
+  {
+   "path": "project/assets/icons-3d/rule-solid.png",
+   "was": "assets/icons-3d/rule-solid.png",
+   "kind": "image",
+   "bytes": 31292
+  },
+  {
+   "path": "project/assets/icons-3d/rule-yellow.png",
+   "was": "assets/icons-3d/rule-yellow.png",
+   "kind": "image",
+   "bytes": 32132
+  },
+  {
+   "path": "project/assets/icons-3d/satisfaction-pale.png",
+   "was": "assets/icons-3d/satisfaction-pale.png",
+   "kind": "image",
+   "bytes": 29479
+  },
+  {
+   "path": "project/assets/icons-3d/satisfaction-solid.png",
+   "was": "assets/icons-3d/satisfaction-solid.png",
+   "kind": "image",
+   "bytes": 29885
+  },
+  {
+   "path": "project/assets/icons-3d/satisfaction-yellow.png",
+   "was": "assets/icons-3d/satisfaction-yellow.png",
+   "kind": "image",
+   "bytes": 30714
+  },
+  {
+   "path": "project/assets/icons-3d/savings-pale.png",
+   "was": "assets/icons-3d/savings-pale.png",
+   "kind": "image",
+   "bytes": 28585
+  },
+  {
+   "path": "project/assets/icons-3d/savings-solid.png",
+   "was": "assets/icons-3d/savings-solid.png",
+   "kind": "image",
+   "bytes": 28974
+  },
+  {
+   "path": "project/assets/icons-3d/savings-yellow.png",
+   "was": "assets/icons-3d/savings-yellow.png",
+   "kind": "image",
+   "bytes": 29874
+  },
+  {
+   "path": "project/assets/icons-3d/schedule-pale.png",
+   "was": "assets/icons-3d/schedule-pale.png",
+   "kind": "image",
+   "bytes": 29508
+  },
+  {
+   "path": "project/assets/icons-3d/schedule-solid.png",
+   "was": "assets/icons-3d/schedule-solid.png",
+   "kind": "image",
+   "bytes": 29922
+  },
+  {
+   "path": "project/assets/icons-3d/schedule-yellow.png",
+   "was": "assets/icons-3d/schedule-yellow.png",
+   "kind": "image",
+   "bytes": 30857
+  },
+  {
+   "path": "project/assets/icons-3d/security-pale.png",
+   "was": "assets/icons-3d/security-pale.png",
+   "kind": "image",
+   "bytes": 30501
+  },
+  {
+   "path": "project/assets/icons-3d/security-solid.png",
+   "was": "assets/icons-3d/security-solid.png",
+   "kind": "image",
+   "bytes": 30818
+  },
+  {
+   "path": "project/assets/icons-3d/security-yellow.png",
+   "was": "assets/icons-3d/security-yellow.png",
+   "kind": "image",
+   "bytes": 31744
+  },
+  {
+   "path": "project/assets/icons-3d/server-solid.png",
+   "was": "assets/icons-3d/server-solid.png",
+   "kind": "image",
+   "bytes": 8283
+  },
+  {
+   "path": "project/assets/icons-3d/service-pale.png",
+   "was": "assets/icons-3d/service-pale.png",
+   "kind": "image",
+   "bytes": 28435
+  },
+  {
+   "path": "project/assets/icons-3d/service-solid.png",
+   "was": "assets/icons-3d/service-solid.png",
+   "kind": "image",
+   "bytes": 29079
+  },
+  {
+   "path": "project/assets/icons-3d/service-yellow.png",
+   "was": "assets/icons-3d/service-yellow.png",
+   "kind": "image",
+   "bytes": 29821
+  },
+  {
+   "path": "project/assets/icons-3d/share-nodes-pale.png",
+   "was": "assets/icons-3d/share-nodes-pale.png",
+   "kind": "image",
+   "bytes": 11497
+  },
+  {
+   "path": "project/assets/icons-3d/share-pale.png",
+   "was": "assets/icons-3d/share-pale.png",
+   "kind": "image",
+   "bytes": 30970
+  },
+  {
+   "path": "project/assets/icons-3d/share-solid.png",
+   "was": "assets/icons-3d/share-solid.png",
+   "kind": "image",
+   "bytes": 31304
+  },
+  {
+   "path": "project/assets/icons-3d/share-yellow.png",
+   "was": "assets/icons-3d/share-yellow.png",
+   "kind": "image",
+   "bytes": 32228
+  },
+  {
+   "path": "project/assets/icons-3d/shield-check-solid.png",
+   "was": "assets/icons-3d/shield-check-solid.png",
+   "kind": "image",
+   "bytes": 10736
+  },
+  {
+   "path": "project/assets/icons-3d/shield-solid.png",
+   "was": "assets/icons-3d/shield-solid.png",
+   "kind": "image",
+   "bytes": 5898
+  },
+  {
+   "path": "project/assets/icons-3d/shield-tower-yellow.png",
+   "was": "assets/icons-3d/shield-tower-yellow.png",
+   "kind": "image",
+   "bytes": 10440
+  },
+  {
+   "path": "project/assets/icons-3d/solar-pale.png",
+   "was": "assets/icons-3d/solar-pale.png",
+   "kind": "image",
+   "bytes": 30851
+  },
+  {
+   "path": "project/assets/icons-3d/solar-solid.png",
+   "was": "assets/icons-3d/solar-solid.png",
+   "kind": "image",
+   "bytes": 31371
+  },
+  {
+   "path": "project/assets/icons-3d/solar-yellow.png",
+   "was": "assets/icons-3d/solar-yellow.png",
+   "kind": "image",
+   "bytes": 32203
+  },
+  {
+   "path": "project/assets/icons-3d/star-solid.png",
+   "was": "assets/icons-3d/star-solid.png",
+   "kind": "image",
+   "bytes": 7185
+  },
+  {
+   "path": "project/assets/icons-3d/storefront-pale.png",
+   "was": "assets/icons-3d/storefront-pale.png",
+   "kind": "image",
+   "bytes": 28776
+  },
+  {
+   "path": "project/assets/icons-3d/storefront-solid.png",
+   "was": "assets/icons-3d/storefront-solid.png",
+   "kind": "image",
+   "bytes": 29366
+  },
+  {
+   "path": "project/assets/icons-3d/storefront-yellow.png",
+   "was": "assets/icons-3d/storefront-yellow.png",
+   "kind": "image",
+   "bytes": 30170
+  },
+  {
+   "path": "project/assets/icons-3d/supervisor-pale.png",
+   "was": "assets/icons-3d/supervisor-pale.png",
+   "kind": "image",
+   "bytes": 30204
+  },
+  {
+   "path": "project/assets/icons-3d/supervisor-solid.png",
+   "was": "assets/icons-3d/supervisor-solid.png",
+   "kind": "image",
+   "bytes": 30743
+  },
+  {
+   "path": "project/assets/icons-3d/supervisor-yellow.png",
+   "was": "assets/icons-3d/supervisor-yellow.png",
+   "kind": "image",
+   "bytes": 31557
+  },
+  {
+   "path": "project/assets/icons-3d/support-pale.png",
+   "was": "assets/icons-3d/support-pale.png",
+   "kind": "image",
+   "bytes": 31732
+  },
+  {
+   "path": "project/assets/icons-3d/support-solid.png",
+   "was": "assets/icons-3d/support-solid.png",
+   "kind": "image",
+   "bytes": 32194
+  },
+  {
+   "path": "project/assets/icons-3d/support-yellow.png",
+   "was": "assets/icons-3d/support-yellow.png",
+   "kind": "image",
+   "bytes": 33064
+  },
+  {
+   "path": "project/assets/icons-3d/sustainability-pale.png",
+   "was": "assets/icons-3d/sustainability-pale.png",
+   "kind": "image",
+   "bytes": 31691
+  },
+  {
+   "path": "project/assets/icons-3d/sustainability-solid.png",
+   "was": "assets/icons-3d/sustainability-solid.png",
+   "kind": "image",
+   "bytes": 32057
+  },
+  {
+   "path": "project/assets/icons-3d/sustainability-yellow.png",
+   "was": "assets/icons-3d/sustainability-yellow.png",
+   "kind": "image",
+   "bytes": 32968
+  },
+  {
+   "path": "project/assets/icons-3d/sync-screens-pale.png",
+   "was": "assets/icons-3d/sync-screens-pale.png",
+   "kind": "image",
+   "bytes": 14589
+  },
+  {
+   "path": "project/assets/icons-3d/target-pale.png",
+   "was": "assets/icons-3d/target-pale.png",
+   "kind": "image",
+   "bytes": 16276
+  },
+  {
+   "path": "project/assets/icons-3d/task-done-pale.png",
+   "was": "assets/icons-3d/task-done-pale.png",
+   "kind": "image",
+   "bytes": 32973
+  },
+  {
+   "path": "project/assets/icons-3d/task-done-solid.png",
+   "was": "assets/icons-3d/task-done-solid.png",
+   "kind": "image",
+   "bytes": 33396
+  },
+  {
+   "path": "project/assets/icons-3d/task-done-yellow.png",
+   "was": "assets/icons-3d/task-done-yellow.png",
+   "kind": "image",
+   "bytes": 34261
+  },
+  {
+   "path": "project/assets/icons-3d/team-pale.png",
+   "was": "assets/icons-3d/team-pale.png",
+   "kind": "image",
+   "bytes": 31378
+  },
+  {
+   "path": "project/assets/icons-3d/team-solid.png",
+   "was": "assets/icons-3d/team-solid.png",
+   "kind": "image",
+   "bytes": 31814
+  },
+  {
+   "path": "project/assets/icons-3d/team-yellow.png",
+   "was": "assets/icons-3d/team-yellow.png",
+   "kind": "image",
+   "bytes": 32513
+  },
+  {
+   "path": "project/assets/icons-3d/terminal-pale.png",
+   "was": "assets/icons-3d/terminal-pale.png",
+   "kind": "image",
+   "bytes": 29685
+  },
+  {
+   "path": "project/assets/icons-3d/terminal-solid.png",
+   "was": "assets/icons-3d/terminal-solid.png",
+   "kind": "image",
+   "bytes": 30074
+  },
+  {
+   "path": "project/assets/icons-3d/terminal-yellow.png",
+   "was": "assets/icons-3d/terminal-yellow.png",
+   "kind": "image",
+   "bytes": 31142
+  },
+  {
+   "path": "project/assets/icons-3d/thumb-up-pale.png",
+   "was": "assets/icons-3d/thumb-up-pale.png",
+   "kind": "image",
+   "bytes": 28312
+  },
+  {
+   "path": "project/assets/icons-3d/thumb-up-solid.png",
+   "was": "assets/icons-3d/thumb-up-solid.png",
+   "kind": "image",
+   "bytes": 28961
+  },
+  {
+   "path": "project/assets/icons-3d/thumb-up-yellow.png",
+   "was": "assets/icons-3d/thumb-up-yellow.png",
+   "kind": "image",
+   "bytes": 29655
+  },
+  {
+   "path": "project/assets/icons-3d/timeline-pale.png",
+   "was": "assets/icons-3d/timeline-pale.png",
+   "kind": "image",
+   "bytes": 30623
+  },
+  {
+   "path": "project/assets/icons-3d/timeline-solid.png",
+   "was": "assets/icons-3d/timeline-solid.png",
+   "kind": "image",
+   "bytes": 30961
+  },
+  {
+   "path": "project/assets/icons-3d/timeline-yellow.png",
+   "was": "assets/icons-3d/timeline-yellow.png",
+   "kind": "image",
+   "bytes": 31872
+  },
+  {
+   "path": "project/assets/icons-3d/training-pale.png",
+   "was": "assets/icons-3d/training-pale.png",
+   "kind": "image",
+   "bytes": 29802
+  },
+  {
+   "path": "project/assets/icons-3d/training-solid.png",
+   "was": "assets/icons-3d/training-solid.png",
+   "kind": "image",
+   "bytes": 30169
+  },
+  {
+   "path": "project/assets/icons-3d/training-yellow.png",
+   "was": "assets/icons-3d/training-yellow.png",
+   "kind": "image",
+   "bytes": 30953
+  },
+  {
+   "path": "project/assets/icons-3d/transmission-tower-solid.png",
+   "was": "assets/icons-3d/transmission-tower-solid.png",
+   "kind": "image",
+   "bytes": 4542
+  },
+  {
+   "path": "project/assets/icons-3d/tree-vegetation-pale.png",
+   "was": "assets/icons-3d/tree-vegetation-pale.png",
+   "kind": "image",
+   "bytes": 4423
+  },
+  {
+   "path": "project/assets/icons-3d/trend-up-pale.png",
+   "was": "assets/icons-3d/trend-up-pale.png",
+   "kind": "image",
+   "bytes": 30489
+  },
+  {
+   "path": "project/assets/icons-3d/trend-up-solid.png",
+   "was": "assets/icons-3d/trend-up-solid.png",
+   "kind": "image",
+   "bytes": 30583
+  },
+  {
+   "path": "project/assets/icons-3d/trend-up-yellow.png",
+   "was": "assets/icons-3d/trend-up-yellow.png",
+   "kind": "image",
+   "bytes": 31648
+  },
+  {
+   "path": "project/assets/icons-3d/trophy-pale.png",
+   "was": "assets/icons-3d/trophy-pale.png",
+   "kind": "image",
+   "bytes": 29951
+  },
+  {
+   "path": "project/assets/icons-3d/trophy-solid.png",
+   "was": "assets/icons-3d/trophy-solid.png",
+   "kind": "image",
+   "bytes": 30100
+  },
+  {
+   "path": "project/assets/icons-3d/trophy-yellow.png",
+   "was": "assets/icons-3d/trophy-yellow.png",
+   "kind": "image",
+   "bytes": 31196
+  },
+  {
+   "path": "project/assets/icons-3d/verified-pale.png",
+   "was": "assets/icons-3d/verified-pale.png",
+   "kind": "image",
+   "bytes": 29316
+  },
+  {
+   "path": "project/assets/icons-3d/verified-solid.png",
+   "was": "assets/icons-3d/verified-solid.png",
+   "kind": "image",
+   "bytes": 29649
+  },
+  {
+   "path": "project/assets/icons-3d/verified-yellow.png",
+   "was": "assets/icons-3d/verified-yellow.png",
+   "kind": "image",
+   "bytes": 30638
+  },
+  {
+   "path": "project/assets/icons-3d/video-call-pale.png",
+   "was": "assets/icons-3d/video-call-pale.png",
+   "kind": "image",
+   "bytes": 28325
+  },
+  {
+   "path": "project/assets/icons-3d/video-call-solid.png",
+   "was": "assets/icons-3d/video-call-solid.png",
+   "kind": "image",
+   "bytes": 28782
+  },
+  {
+   "path": "project/assets/icons-3d/video-call-yellow.png",
+   "was": "assets/icons-3d/video-call-yellow.png",
+   "kind": "image",
+   "bytes": 29584
+  },
+  {
+   "path": "project/assets/icons-3d/wallet-pale.png",
+   "was": "assets/icons-3d/wallet-pale.png",
+   "kind": "image",
+   "bytes": 28354
+  },
+  {
+   "path": "project/assets/icons-3d/wallet-solid.png",
+   "was": "assets/icons-3d/wallet-solid.png",
+   "kind": "image",
+   "bytes": 28928
+  },
+  {
+   "path": "project/assets/icons-3d/wallet-yellow.png",
+   "was": "assets/icons-3d/wallet-yellow.png",
+   "kind": "image",
+   "bytes": 29837
+  },
+  {
+   "path": "project/assets/icons-3d/warning-pale.png",
+   "was": "assets/icons-3d/warning-pale.png",
+   "kind": "image",
+   "bytes": 9814
+  },
+  {
+   "path": "project/assets/icons-3d/water-pale.png",
+   "was": "assets/icons-3d/water-pale.png",
+   "kind": "image",
+   "bytes": 29276
+  },
+  {
+   "path": "project/assets/icons-3d/water-solid.png",
+   "was": "assets/icons-3d/water-solid.png",
+   "kind": "image",
+   "bytes": 29772
+  },
+  {
+   "path": "project/assets/icons-3d/water-yellow.png",
+   "was": "assets/icons-3d/water-yellow.png",
+   "kind": "image",
+   "bytes": 30589
+  },
+  {
+   "path": "project/assets/icons-3d/wind-pale.png",
+   "was": "assets/icons-3d/wind-pale.png",
+   "kind": "image",
+   "bytes": 31822
+  },
+  {
+   "path": "project/assets/icons-3d/wind-solid.png",
+   "was": "assets/icons-3d/wind-solid.png",
+   "kind": "image",
+   "bytes": 32223
+  },
+  {
+   "path": "project/assets/icons-3d/wind-yellow.png",
+   "was": "assets/icons-3d/wind-yellow.png",
+   "kind": "image",
+   "bytes": 33178
+  },
+  {
+   "path": "project/assets/icons/api-service.svg",
+   "was": "assets/icons/api-service.svg",
+   "kind": "image",
+   "bytes": 8077
+  },
+  {
+   "path": "project/assets/icons/aplikasi-web.svg",
+   "was": "assets/icons/aplikasi-web.svg",
+   "kind": "image",
+   "bytes": 8198
+  },
+  {
+   "path": "project/assets/icons/awan-iot.svg",
+   "was": "assets/icons/awan-iot.svg",
+   "kind": "image",
+   "bytes": 8125
+  },
+  {
+   "path": "project/assets/icons/bola-lampu.svg",
+   "was": "assets/icons/bola-lampu.svg",
+   "kind": "image",
+   "bytes": 8043
+  },
+  {
+   "path": "project/assets/icons/ceklis-bulat.svg",
+   "was": "assets/icons/ceklis-bulat.svg",
+   "kind": "image",
+   "bytes": 8020
+  },
+  {
+   "path": "project/assets/icons/cloud.svg",
+   "was": "assets/icons/cloud.svg",
+   "kind": "image",
+   "bytes": 8020
+  },
+  {
+   "path": "project/assets/icons/database-spasial.svg",
+   "was": "assets/icons/database-spasial.svg",
+   "kind": "image",
+   "bytes": 8279
+  },
+  {
+   "path": "project/assets/icons/database.svg",
+   "was": "assets/icons/database.svg",
+   "kind": "image",
+   "bytes": 8154
+  },
+  {
+   "path": "project/assets/icons/dokumen-cek.svg",
+   "was": "assets/icons/dokumen-cek.svg",
+   "kind": "image",
+   "bytes": 8076
+  },
+  {
+   "path": "project/assets/icons/etl-worker.svg",
+   "was": "assets/icons/etl-worker.svg",
+   "kind": "image",
+   "bytes": 8144
+  },
+  {
+   "path": "project/assets/icons/firewall.svg",
+   "was": "assets/icons/firewall.svg",
+   "kind": "image",
+   "bytes": 8133
+  },
+  {
+   "path": "project/assets/icons/gardu.svg",
+   "was": "assets/icons/gardu.svg",
+   "kind": "image",
+   "bytes": 8049
+  },
+  {
+   "path": "project/assets/icons/grafik-batang.svg",
+   "was": "assets/icons/grafik-batang.svg",
+   "kind": "image",
+   "bytes": 8113
+  },
+  {
+   "path": "project/assets/icons/jam.svg",
+   "was": "assets/icons/jam.svg",
+   "kind": "image",
+   "bytes": 8012
+  },
+  {
+   "path": "project/assets/icons/kalender.svg",
+   "was": "assets/icons/kalender.svg",
+   "kind": "image",
+   "bytes": 8124
+  },
+  {
+   "path": "project/assets/icons/klipboard.svg",
+   "was": "assets/icons/klipboard.svg",
+   "kind": "image",
+   "bytes": 8098
+  },
+  {
+   "path": "project/assets/icons/kunci-pas.svg",
+   "was": "assets/icons/kunci-pas.svg",
+   "kind": "image",
+   "bytes": 8041
+  },
+  {
+   "path": "project/assets/icons/load-balancer.svg",
+   "was": "assets/icons/load-balancer.svg",
+   "kind": "image",
+   "bytes": 8273
+  },
+  {
+   "path": "project/assets/icons/lonceng.svg",
+   "was": "assets/icons/lonceng.svg",
+   "kind": "image",
+   "bytes": 8090
+  },
+  {
+   "path": "project/assets/icons/mata.svg",
+   "was": "assets/icons/mata.svg",
+   "kind": "image",
+   "bytes": 8049
+  },
+  {
+   "path": "project/assets/icons/monitor.svg",
+   "was": "assets/icons/monitor.svg",
+   "kind": "image",
+   "bytes": 8075
+  },
+  {
+   "path": "project/assets/icons/panah-naik.svg",
+   "was": "assets/icons/panah-naik.svg",
+   "kind": "image",
+   "bytes": 8011
+  },
+  {
+   "path": "project/assets/icons/panah-turun.svg",
+   "was": "assets/icons/panah-turun.svg",
+   "kind": "image",
+   "bytes": 8011
+  },
+  {
+   "path": "project/assets/icons/pengguna.svg",
+   "was": "assets/icons/pengguna.svg",
+   "kind": "image",
+   "bytes": 8032
+  },
+  {
+   "path": "project/assets/icons/peringatan.svg",
+   "was": "assets/icons/peringatan.svg",
+   "kind": "image",
+   "bytes": 8027
+  },
+  {
+   "path": "project/assets/icons/perisai-cek.svg",
+   "was": "assets/icons/perisai-cek.svg",
+   "kind": "image",
+   "bytes": 8054
+  },
+  {
+   "path": "project/assets/icons/petir.svg",
+   "was": "assets/icons/petir.svg",
+   "kind": "image",
+   "bytes": 7988
+  },
+  {
+   "path": "project/assets/icons/petugas.svg",
+   "was": "assets/icons/petugas.svg",
+   "kind": "image",
+   "bytes": 8101
+  },
+  {
+   "path": "project/assets/icons/pin-lokasi.svg",
+   "was": "assets/icons/pin-lokasi.svg",
+   "kind": "image",
+   "bytes": 8048
+  },
+  {
+   "path": "project/assets/icons/pusat-data.svg",
+   "was": "assets/icons/pusat-data.svg",
+   "kind": "image",
+   "bytes": 8162
+  },
+  {
+   "path": "project/assets/icons/roda-gigi.svg",
+   "was": "assets/icons/roda-gigi.svg",
+   "kind": "image",
+   "bytes": 8126
+  },
+  {
+   "path": "project/assets/icons/router.svg",
+   "was": "assets/icons/router.svg",
+   "kind": "image",
+   "bytes": 8186
+  },
+  {
+   "path": "project/assets/icons/rupiah.svg",
+   "was": "assets/icons/rupiah.svg",
+   "kind": "image",
+   "bytes": 8052
+  },
+  {
+   "path": "project/assets/icons/server.svg",
+   "was": "assets/icons/server.svg",
+   "kind": "image",
+   "bytes": 8220
+  },
+  {
+   "path": "project/assets/icons/sinyal.svg",
+   "was": "assets/icons/sinyal.svg",
+   "kind": "image",
+   "bytes": 8190
+  },
+  {
+   "path": "project/assets/icons/sistem-eksternal.svg",
+   "was": "assets/icons/sistem-eksternal.svg",
+   "kind": "image",
+   "bytes": 8125
+  },
+  {
+   "path": "project/assets/icons/sprite.svg",
+   "was": "assets/icons/sprite.svg",
+   "kind": "image",
+   "bytes": 21395
+  },
+  {
+   "path": "project/assets/icons/stopwatch.svg",
+   "was": "assets/icons/stopwatch.svg",
+   "kind": "image",
+   "bytes": 8090
+  },
+  {
+   "path": "project/assets/icons/switch.svg",
+   "was": "assets/icons/switch.svg",
+   "kind": "image",
+   "bytes": 8129
+  },
+  {
+   "path": "project/assets/icons/tablet.svg",
+   "was": "assets/icons/tablet.svg",
+   "kind": "image",
+   "bytes": 8067
+  },
+  {
+   "path": "project/assets/icons/target.svg",
+   "was": "assets/icons/target.svg",
+   "kind": "image",
+   "bytes": 8059
+  },
+  {
+   "path": "project/assets/icons/trafo.svg",
+   "was": "assets/icons/trafo.svg",
+   "kind": "image",
+   "bytes": 8209
+  },
+  {
+   "path": "project/assets/icons/unit-kerja.svg",
+   "was": "assets/icons/unit-kerja.svg",
+   "kind": "image",
+   "bytes": 8131
+  },
+  {
+   "path": "project/assets/icons/zona-jaringan.svg",
+   "was": "assets/icons/zona-jaringan.svg",
+   "kind": "image",
+   "bytes": 8110
+  },
+  {
+   "path": "project/assets/logo-color.png",
+   "was": "assets/logo-color.png",
+   "kind": "image",
+   "bytes": 51429
+  },
+  {
+   "path": "project/assets/logo-danantara-white.png",
+   "was": "assets/logo-danantara-white.png",
+   "kind": "image",
+   "bytes": 99119
+  },
+  {
+   "path": "project/assets/logo-danantara.png",
+   "was": "assets/logo-danantara.png",
+   "kind": "image",
+   "bytes": 62768
+  },
+  {
+   "path": "project/assets/logo-pln-iconplus-white.png",
+   "was": "assets/logo-pln-iconplus-white.png",
+   "kind": "image",
+   "bytes": 37656
+  },
+  {
+   "path": "project/assets/logo-pln-iconplus.png",
+   "was": "assets/logo-pln-iconplus.png",
+   "kind": "image",
+   "bytes": 29013
+  },
+  {
+   "path": "project/assets/logo-white.png",
+   "was": "assets/logo-white.png",
+   "kind": "image",
+   "bytes": 70892
+  },
+  {
+   "path": "project/assets/photos/bagian-control-room.webp",
+   "was": "assets/photos/bagian-control-room.webp",
+   "kind": "image",
+   "bytes": 61876
+  },
+  {
+   "path": "project/assets/photos/bagian-petugas-jaringan.webp",
+   "was": "assets/photos/bagian-petugas-jaringan.webp",
+   "kind": "image",
+   "bytes": 49906
+  },
+  {
+   "path": "project/assets/photos/cover-jaringan-20kv.webp",
+   "was": "assets/photos/cover-jaringan-20kv.webp",
+   "kind": "image",
+   "bytes": 47082
+  },
+  {
+   "path": "project/assets/photos/ilustrasi-platform-stack.png",
+   "was": "assets/photos/ilustrasi-platform-stack.png",
+   "kind": "image",
+   "bytes": 199069
+  },
+  {
+   "path": "project/assets/photos/jaringan-energi.webp",
+   "was": "assets/photos/jaringan-energi.webp",
+   "kind": "image",
+   "bytes": 132518
+  },
+  {
+   "path": "project/assets/photos/kota-jaringan-malam.webp",
+   "was": "assets/photos/kota-jaringan-malam.webp",
+   "kind": "image",
+   "bytes": 138814
+  },
+  {
+   "path": "project/assets/photos/penutup-light.webp",
+   "was": "assets/photos/penutup-light.webp",
+   "kind": "image",
+   "bytes": 22280
+  },
+  {
+   "path": "project/assets/photos/penutup-tech.webp",
+   "was": "assets/photos/penutup-tech.webp",
+   "kind": "image",
+   "bytes": 29522
+  },
+  {
+   "path": "project/components/blocks/BigNumber.d.ts",
+   "was": "components/blocks/BigNumber.d.ts",
+   "kind": "component-types",
+   "component": "BigNumber",
+   "bytes": 515,
+   "fileAt": "project/components/BigNumber/BigNumber.d.ts"
+  },
+  {
+   "path": "project/components/blocks/BigNumber.jsx",
+   "was": "components/blocks/BigNumber.jsx",
+   "kind": "component-source",
+   "component": "BigNumber",
+   "bytes": 883
+  },
+  {
+   "path": "project/components/blocks/BigNumber.prompt.md",
+   "was": "components/blocks/BigNumber.prompt.md",
+   "kind": "component-guide",
+   "component": "BigNumber",
+   "bytes": 200,
+   "fileAt": "project/components/BigNumber/README.md"
+  },
+  {
+   "path": "project/components/blocks/Callout.d.ts",
+   "was": "components/blocks/Callout.d.ts",
+   "kind": "component-types",
+   "component": "Callout",
+   "bytes": 515,
+   "fileAt": "project/components/Callout/Callout.d.ts"
+  },
+  {
+   "path": "project/components/blocks/Callout.jsx",
+   "was": "components/blocks/Callout.jsx",
+   "kind": "component-source",
+   "component": "Callout",
+   "bytes": 2747
+  },
+  {
+   "path": "project/components/blocks/Callout.prompt.md",
+   "was": "components/blocks/Callout.prompt.md",
+   "kind": "component-guide",
+   "component": "Callout",
+   "bytes": 244,
+   "fileAt": "project/components/Callout/README.md"
+  },
+  {
+   "path": "project/components/blocks/InsightBand.d.ts",
+   "was": "components/blocks/InsightBand.d.ts",
+   "kind": "component-types",
+   "component": "InsightBand",
+   "bytes": 446,
+   "fileAt": "project/components/InsightBand/InsightBand.d.ts"
+  },
+  {
+   "path": "project/components/blocks/InsightBand.jsx",
+   "was": "components/blocks/InsightBand.jsx",
+   "kind": "component-source",
+   "component": "InsightBand",
+   "bytes": 1717
+  },
+  {
+   "path": "project/components/blocks/InsightBand.prompt.md",
+   "was": "components/blocks/InsightBand.prompt.md",
+   "kind": "component-guide",
+   "component": "InsightBand",
+   "bytes": 205,
+   "fileAt": "project/components/InsightBand/README.md"
+  },
+  {
+   "path": "project/components/blocks/KpiCard.d.ts",
+   "was": "components/blocks/KpiCard.d.ts",
+   "kind": "component-types",
+   "component": "KpiCard",
+   "bytes": 602,
+   "fileAt": "project/components/KpiCard/KpiCard.d.ts"
+  },
+  {
+   "path": "project/components/blocks/KpiCard.jsx",
+   "was": "components/blocks/KpiCard.jsx",
+   "kind": "component-source",
+   "component": "KpiCard",
+   "bytes": 3137
+  },
+  {
+   "path": "project/components/blocks/KpiCard.prompt.md",
+   "was": "components/blocks/KpiCard.prompt.md",
+   "kind": "component-guide",
+   "component": "KpiCard",
+   "bytes": 237,
+   "fileAt": "project/components/KpiCard/README.md"
+  },
+  {
+   "path": "project/components/blocks/OptionCard.d.ts",
+   "was": "components/blocks/OptionCard.d.ts",
+   "kind": "component-types",
+   "component": "OptionCard",
+   "bytes": 443,
+   "fileAt": "project/components/OptionCard/OptionCard.d.ts"
+  },
+  {
+   "path": "project/components/blocks/OptionCard.jsx",
+   "was": "components/blocks/OptionCard.jsx",
+   "kind": "component-source",
+   "component": "OptionCard",
+   "bytes": 1435
+  },
+  {
+   "path": "project/components/blocks/OptionCard.prompt.md",
+   "was": "components/blocks/OptionCard.prompt.md",
+   "kind": "component-guide",
+   "component": "OptionCard",
+   "bytes": 184,
+   "fileAt": "project/components/OptionCard/README.md"
+  },
+  {
+   "path": "project/components/blocks/Pill.d.ts",
+   "was": "components/blocks/Pill.d.ts",
+   "kind": "component-types",
+   "component": "Pill",
+   "bytes": 513,
+   "fileAt": "project/components/Pill/Pill.d.ts"
+  },
+  {
+   "path": "project/components/blocks/Pill.jsx",
+   "was": "components/blocks/Pill.jsx",
+   "kind": "component-source",
+   "component": "Pill",
+   "bytes": 1060
+  },
+  {
+   "path": "project/components/blocks/Pill.prompt.md",
+   "was": "components/blocks/Pill.prompt.md",
+   "kind": "component-guide",
+   "component": "Pill",
+   "bytes": 140,
+   "fileAt": "project/components/Pill/README.md"
+  },
+  {
+   "path": "project/components/blocks/PillarCard.d.ts",
+   "was": "components/blocks/PillarCard.d.ts",
+   "kind": "component-types",
+   "component": "PillarCard",
+   "bytes": 490,
+   "fileAt": "project/components/PillarCard/PillarCard.d.ts"
+  },
+  {
+   "path": "project/components/blocks/PillarCard.jsx",
+   "was": "components/blocks/PillarCard.jsx",
+   "kind": "component-source",
+   "component": "PillarCard",
+   "bytes": 1288
+  },
+  {
+   "path": "project/components/blocks/PillarCard.prompt.md",
+   "was": "components/blocks/PillarCard.prompt.md",
+   "kind": "component-guide",
+   "component": "PillarCard",
+   "bytes": 210,
+   "fileAt": "project/components/PillarCard/README.md"
+  },
+  {
+   "path": "project/components/blocks/QuestionCard.d.ts",
+   "was": "components/blocks/QuestionCard.d.ts",
+   "kind": "component-types",
+   "component": "QuestionCard",
+   "bytes": 420,
+   "fileAt": "project/components/QuestionCard/QuestionCard.d.ts"
+  },
+  {
+   "path": "project/components/blocks/QuestionCard.jsx",
+   "was": "components/blocks/QuestionCard.jsx",
+   "kind": "component-source",
+   "component": "QuestionCard",
+   "bytes": 983
+  },
+  {
+   "path": "project/components/blocks/QuestionCard.prompt.md",
+   "was": "components/blocks/QuestionCard.prompt.md",
+   "kind": "component-guide",
+   "component": "QuestionCard",
+   "bytes": 205,
+   "fileAt": "project/components/QuestionCard/README.md"
+  },
+  {
+   "path": "project/components/blocks/blocks.card.html",
+   "was": "components/blocks/blocks.card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 3961,
+   "fileAt": "project/components/Blocks/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/commercial/BeforeAfterTable.d.ts",
+   "was": "components/commercial/BeforeAfterTable.d.ts",
+   "kind": "component-types",
+   "component": "BeforeAfterTable",
+   "bytes": 584,
+   "fileAt": "project/components/BeforeAfterTable/BeforeAfterTable.d.ts"
+  },
+  {
+   "path": "project/components/commercial/BeforeAfterTable.jsx",
+   "was": "components/commercial/BeforeAfterTable.jsx",
+   "kind": "component-source",
+   "component": "BeforeAfterTable",
+   "bytes": 2020
+  },
+  {
+   "path": "project/components/commercial/BudgetOption.d.ts",
+   "was": "components/commercial/BudgetOption.d.ts",
+   "kind": "component-types",
+   "component": "BudgetOption",
+   "bytes": 596,
+   "fileAt": "project/components/BudgetOption/BudgetOption.d.ts"
+  },
+  {
+   "path": "project/components/commercial/BudgetOption.jsx",
+   "was": "components/commercial/BudgetOption.jsx",
+   "kind": "component-source",
+   "component": "BudgetOption",
+   "bytes": 2979
+  },
+  {
+   "path": "project/components/commercial/ChannelHub.d.ts",
+   "was": "components/commercial/ChannelHub.d.ts",
+   "kind": "component-types",
+   "component": "ChannelHub",
+   "bytes": 537,
+   "fileAt": "project/components/ChannelHub/ChannelHub.d.ts"
+  },
+  {
+   "path": "project/components/commercial/ChannelHub.jsx",
+   "was": "components/commercial/ChannelHub.jsx",
+   "kind": "component-source",
+   "component": "ChannelHub",
+   "bytes": 2926
+  },
+  {
+   "path": "project/components/commercial/FundEquation.d.ts",
+   "was": "components/commercial/FundEquation.d.ts",
+   "kind": "component-types",
+   "component": "FundEquation",
+   "bytes": 463,
+   "fileAt": "project/components/FundEquation/FundEquation.d.ts"
+  },
+  {
+   "path": "project/components/commercial/FundEquation.jsx",
+   "was": "components/commercial/FundEquation.jsx",
+   "kind": "component-source",
+   "component": "FundEquation",
+   "bytes": 1690
+  },
+  {
+   "path": "project/components/commercial/GanttWeeks.d.ts",
+   "was": "components/commercial/GanttWeeks.d.ts",
+   "kind": "component-types",
+   "component": "GanttWeeks",
+   "bytes": 656,
+   "fileAt": "project/components/GanttWeeks/GanttWeeks.d.ts"
+  },
+  {
+   "path": "project/components/commercial/GanttWeeks.jsx",
+   "was": "components/commercial/GanttWeeks.jsx",
+   "kind": "component-source",
+   "component": "GanttWeeks",
+   "bytes": 3718
+  },
+  {
+   "path": "project/components/commercial/PriceCompare.d.ts",
+   "was": "components/commercial/PriceCompare.d.ts",
+   "kind": "component-types",
+   "component": "PriceCompare",
+   "bytes": 475,
+   "fileAt": "project/components/PriceCompare/PriceCompare.d.ts"
+  },
+  {
+   "path": "project/components/commercial/PriceCompare.jsx",
+   "was": "components/commercial/PriceCompare.jsx",
+   "kind": "component-source",
+   "component": "PriceCompare",
+   "bytes": 2025
+  },
+  {
+   "path": "project/components/commercial/RabTable.d.ts",
+   "was": "components/commercial/RabTable.d.ts",
+   "kind": "component-types",
+   "component": "RabTable",
+   "bytes": 581,
+   "fileAt": "project/components/RabTable/RabTable.d.ts"
+  },
+  {
+   "path": "project/components/commercial/RabTable.jsx",
+   "was": "components/commercial/RabTable.jsx",
+   "kind": "component-source",
+   "component": "RabTable",
+   "bytes": 2580
+  },
+  {
+   "path": "project/components/commercial/ScopeGrid.d.ts",
+   "was": "components/commercial/ScopeGrid.d.ts",
+   "kind": "component-types",
+   "component": "ScopeGrid",
+   "bytes": 541,
+   "fileAt": "project/components/ScopeGrid/ScopeGrid.d.ts"
+  },
+  {
+   "path": "project/components/commercial/ScopeGrid.jsx",
+   "was": "components/commercial/ScopeGrid.jsx",
+   "kind": "component-source",
+   "component": "ScopeGrid",
+   "bytes": 1597
+  },
+  {
+   "path": "project/components/commercial/StatusChip.d.ts",
+   "was": "components/commercial/StatusChip.d.ts",
+   "kind": "component-types",
+   "component": "StatusChip",
+   "bytes": 358,
+   "fileAt": "project/components/StatusChip/StatusChip.d.ts"
+  },
+  {
+   "path": "project/components/commercial/StatusChip.jsx",
+   "was": "components/commercial/StatusChip.jsx",
+   "kind": "component-source",
+   "component": "StatusChip",
+   "bytes": 701
+  },
+  {
+   "path": "project/components/commercial/cmUtil.js",
+   "was": "components/commercial/cmUtil.js",
+   "kind": "component-source",
+   "bytes": 396
+  },
+  {
+   "path": "project/components/commercial/commercial-lingkup.card.html",
+   "was": "components/commercial/commercial-lingkup.card.html",
+   "kind": "showcase-page",
+   "group": "Komersial · V10",
+   "bytes": 8387,
+   "fileAt": "project/components/CommercialLingkup/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/commercial/commercial-nilai.card.html",
+   "was": "components/commercial/commercial-nilai.card.html",
+   "kind": "showcase-page",
+   "group": "Komersial · V10",
+   "bytes": 8915,
+   "fileAt": "project/components/CommercialNilai/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/data/DataTable.d.ts",
+   "was": "components/data/DataTable.d.ts",
+   "kind": "component-types",
+   "component": "DataTable",
+   "bytes": 617,
+   "fileAt": "project/components/DataTable/DataTable.d.ts"
+  },
+  {
+   "path": "project/components/data/DataTable.jsx",
+   "was": "components/data/DataTable.jsx",
+   "kind": "component-source",
+   "component": "DataTable",
+   "bytes": 1933
+  },
+  {
+   "path": "project/components/data/DataTable.prompt.md",
+   "was": "components/data/DataTable.prompt.md",
+   "kind": "component-guide",
+   "component": "DataTable",
+   "bytes": 247,
+   "fileAt": "project/components/DataTable/README.md"
+  },
+  {
+   "path": "project/components/data/Milestones.d.ts",
+   "was": "components/data/Milestones.d.ts",
+   "kind": "component-types",
+   "component": "Milestones",
+   "bytes": 453,
+   "fileAt": "project/components/Milestones/Milestones.d.ts"
+  },
+  {
+   "path": "project/components/data/Milestones.jsx",
+   "was": "components/data/Milestones.jsx",
+   "kind": "component-source",
+   "component": "Milestones",
+   "bytes": 1827
+  },
+  {
+   "path": "project/components/data/Milestones.prompt.md",
+   "was": "components/data/Milestones.prompt.md",
+   "kind": "component-guide",
+   "component": "Milestones",
+   "bytes": 152,
+   "fileAt": "project/components/Milestones/README.md"
+  },
+  {
+   "path": "project/components/data/Roadmap.d.ts",
+   "was": "components/data/Roadmap.d.ts",
+   "kind": "component-types",
+   "component": "Roadmap",
+   "bytes": 457,
+   "fileAt": "project/components/Roadmap/Roadmap.d.ts"
+  },
+  {
+   "path": "project/components/data/Roadmap.jsx",
+   "was": "components/data/Roadmap.jsx",
+   "kind": "component-source",
+   "component": "Roadmap",
+   "bytes": 1830
+  },
+  {
+   "path": "project/components/data/Roadmap.prompt.md",
+   "was": "components/data/Roadmap.prompt.md",
+   "kind": "component-guide",
+   "component": "Roadmap",
+   "bytes": 205,
+   "fileAt": "project/components/Roadmap/README.md"
+  },
+  {
+   "path": "project/components/data/data.card.html",
+   "was": "components/data/data.card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 2664,
+   "fileAt": "project/components/Data/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/hd/HdAgenda.d.ts",
+   "was": "components/hd/HdAgenda.d.ts",
+   "kind": "component-types",
+   "component": "HdAgenda",
+   "bytes": 345,
+   "fileAt": "project/components/HdAgenda/HdAgenda.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdAgenda.jsx",
+   "was": "components/hd/HdAgenda.jsx",
+   "kind": "component-source",
+   "component": "HdAgenda",
+   "bytes": 1078
+  },
+  {
+   "path": "project/components/hd/HdDecision.d.ts",
+   "was": "components/hd/HdDecision.d.ts",
+   "kind": "component-types",
+   "component": "HdDecision",
+   "bytes": 447,
+   "fileAt": "project/components/HdDecision/HdDecision.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdDecision.jsx",
+   "was": "components/hd/HdDecision.jsx",
+   "kind": "component-source",
+   "component": "HdDecision",
+   "bytes": 1729
+  },
+  {
+   "path": "project/components/hd/HdFooter.d.ts",
+   "was": "components/hd/HdFooter.d.ts",
+   "kind": "component-types",
+   "component": "HdFooter",
+   "bytes": 325,
+   "fileAt": "project/components/HdFooter/HdFooter.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdFooter.jsx",
+   "was": "components/hd/HdFooter.jsx",
+   "kind": "component-source",
+   "component": "HdFooter",
+   "bytes": 1377
+  },
+  {
+   "path": "project/components/hd/HdHeader.d.ts",
+   "was": "components/hd/HdHeader.d.ts",
+   "kind": "component-types",
+   "component": "HdHeader",
+   "bytes": 493,
+   "fileAt": "project/components/HdHeader/HdHeader.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdHeader.jsx",
+   "was": "components/hd/HdHeader.jsx",
+   "kind": "component-source",
+   "component": "HdHeader",
+   "bytes": 2122
+  },
+  {
+   "path": "project/components/hd/HdInsight.d.ts",
+   "was": "components/hd/HdInsight.d.ts",
+   "kind": "component-types",
+   "component": "HdInsight",
+   "bytes": 444,
+   "fileAt": "project/components/HdInsight/HdInsight.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdInsight.jsx",
+   "was": "components/hd/HdInsight.jsx",
+   "kind": "component-source",
+   "component": "HdInsight",
+   "bytes": 1099
+  },
+  {
+   "path": "project/components/hd/HdJourney.d.ts",
+   "was": "components/hd/HdJourney.d.ts",
+   "kind": "component-types",
+   "component": "HdJourney",
+   "bytes": 410,
+   "fileAt": "project/components/HdJourney/HdJourney.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdJourney.jsx",
+   "was": "components/hd/HdJourney.jsx",
+   "kind": "component-source",
+   "component": "HdJourney",
+   "bytes": 1454
+  },
+  {
+   "path": "project/components/hd/HdKpi.d.ts",
+   "was": "components/hd/HdKpi.d.ts",
+   "kind": "component-types",
+   "component": "HdKpi",
+   "bytes": 341,
+   "fileAt": "project/components/HdKpi/HdKpi.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdKpi.jsx",
+   "was": "components/hd/HdKpi.jsx",
+   "kind": "component-source",
+   "component": "HdKpi",
+   "bytes": 926
+  },
+  {
+   "path": "project/components/hd/HdLayerStack.d.ts",
+   "was": "components/hd/HdLayerStack.d.ts",
+   "kind": "component-types",
+   "component": "HdLayerStack",
+   "bytes": 431,
+   "fileAt": "project/components/HdLayerStack/HdLayerStack.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdLayerStack.jsx",
+   "was": "components/hd/HdLayerStack.jsx",
+   "kind": "component-source",
+   "component": "HdLayerStack",
+   "bytes": 1729
+  },
+  {
+   "path": "project/components/hd/HdNumberedTable.d.ts",
+   "was": "components/hd/HdNumberedTable.d.ts",
+   "kind": "component-types",
+   "component": "HdNumberedTable",
+   "bytes": 382,
+   "fileAt": "project/components/HdNumberedTable/HdNumberedTable.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdNumberedTable.jsx",
+   "was": "components/hd/HdNumberedTable.jsx",
+   "kind": "component-source",
+   "component": "HdNumberedTable",
+   "bytes": 1360
+  },
+  {
+   "path": "project/components/hd/HdStatusList.d.ts",
+   "was": "components/hd/HdStatusList.d.ts",
+   "kind": "component-types",
+   "component": "HdStatusList",
+   "bytes": 355,
+   "fileAt": "project/components/HdStatusList/HdStatusList.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdStatusList.jsx",
+   "was": "components/hd/HdStatusList.jsx",
+   "kind": "component-source",
+   "component": "HdStatusList",
+   "bytes": 1194
+  },
+  {
+   "path": "project/components/hd/HdStepCard.d.ts",
+   "was": "components/hd/HdStepCard.d.ts",
+   "kind": "component-types",
+   "component": "HdStepCard",
+   "bytes": 512,
+   "fileAt": "project/components/HdStepCard/HdStepCard.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdStepCard.jsx",
+   "was": "components/hd/HdStepCard.jsx",
+   "kind": "component-source",
+   "component": "HdStepCard",
+   "bytes": 1571
+  },
+  {
+   "path": "project/components/hd/HdStepFlow.d.ts",
+   "was": "components/hd/HdStepFlow.d.ts",
+   "kind": "component-types",
+   "component": "HdStepFlow",
+   "bytes": 461,
+   "fileAt": "project/components/HdStepFlow/HdStepFlow.d.ts"
+  },
+  {
+   "path": "project/components/hd/HdStepFlow.jsx",
+   "was": "components/hd/HdStepFlow.jsx",
+   "kind": "component-source",
+   "component": "HdStepFlow",
+   "bytes": 667
+  },
+  {
+   "path": "project/components/hd/HeaderArt.d.ts",
+   "was": "components/hd/HeaderArt.d.ts",
+   "kind": "component-types",
+   "component": "HeaderArt",
+   "bytes": 708,
+   "fileAt": "project/components/HeaderArt/HeaderArt.d.ts"
+  },
+  {
+   "path": "project/components/hd/HeaderArt.jsx",
+   "was": "components/hd/HeaderArt.jsx",
+   "kind": "component-source",
+   "component": "HeaderArt",
+   "bytes": 395
+  },
+  {
+   "path": "project/components/hd/hd-blocks.card.html",
+   "was": "components/hd/hd-blocks.card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 2746,
+   "fileAt": "project/components/HdBlocks/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/hd/hd-v8.card.html",
+   "was": "components/hd/hd-v8.card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 2531,
+   "fileAt": "project/components/HdV8/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/hd/hd-v9.card.html",
+   "was": "components/hd/hd-v9.card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 2652,
+   "fileAt": "project/components/HdV9/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/hd/hdUtil.js",
+   "was": "components/hd/hdUtil.js",
+   "kind": "component-source",
+   "bytes": 1667
+  },
+  {
+   "path": "project/components/slide/BrandLogos.d.ts",
+   "was": "components/slide/BrandLogos.d.ts",
+   "kind": "component-types",
+   "component": "BrandLogos",
+   "bytes": 694,
+   "fileAt": "project/components/BrandLogos/BrandLogos.d.ts"
+  },
+  {
+   "path": "project/components/slide/BrandLogos.jsx",
+   "was": "components/slide/BrandLogos.jsx",
+   "kind": "component-source",
+   "component": "BrandLogos",
+   "bytes": 1313
+  },
+  {
+   "path": "project/components/slide/BrandLogos.prompt.md",
+   "was": "components/slide/BrandLogos.prompt.md",
+   "kind": "component-guide",
+   "component": "BrandLogos",
+   "bytes": 209,
+   "fileAt": "project/components/BrandLogos/README.md"
+  },
+  {
+   "path": "project/components/slide/Icon.d.ts",
+   "was": "components/slide/Icon.d.ts",
+   "kind": "component-types",
+   "component": "Icon",
+   "bytes": 503,
+   "fileAt": "project/components/Icon/Icon.d.ts"
+  },
+  {
+   "path": "project/components/slide/Icon.jsx",
+   "was": "components/slide/Icon.jsx",
+   "kind": "component-source",
+   "component": "Icon",
+   "bytes": 1488
+  },
+  {
+   "path": "project/components/slide/Icon.prompt.md",
+   "was": "components/slide/Icon.prompt.md",
+   "kind": "component-guide",
+   "component": "Icon",
+   "bytes": 607,
+   "fileAt": "project/components/Icon/README.md"
+  },
+  {
+   "path": "project/components/slide/Slide.d.ts",
+   "was": "components/slide/Slide.d.ts",
+   "kind": "component-types",
+   "component": "Slide",
+   "bytes": 516,
+   "fileAt": "project/components/Slide/Slide.d.ts"
+  },
+  {
+   "path": "project/components/slide/Slide.jsx",
+   "was": "components/slide/Slide.jsx",
+   "kind": "component-source",
+   "component": "Slide",
+   "bytes": 3795
+  },
+  {
+   "path": "project/docs/components/slide/Slide.prompt.md",
+   "was": "components/slide/Slide.prompt.md",
+   "kind": "component-guide",
+   "component": "Slide",
+   "bytes": 428,
+   "fileAt": "project/components/Slide/README.md"
+  },
+  {
+   "path": "project/components/slide/SlideFooter.d.ts",
+   "was": "components/slide/SlideFooter.d.ts",
+   "kind": "component-types",
+   "component": "SlideFooter",
+   "bytes": 424,
+   "fileAt": "project/components/SlideFooter/SlideFooter.d.ts"
+  },
+  {
+   "path": "project/components/slide/SlideFooter.jsx",
+   "was": "components/slide/SlideFooter.jsx",
+   "kind": "component-source",
+   "component": "SlideFooter",
+   "bytes": 2086
+  },
+  {
+   "path": "project/components/slide/SlideFooter.prompt.md",
+   "was": "components/slide/SlideFooter.prompt.md",
+   "kind": "component-guide",
+   "component": "SlideFooter",
+   "bytes": 242,
+   "fileAt": "project/components/SlideFooter/README.md"
+  },
+  {
+   "path": "project/components/slide/SlideTitle.d.ts",
+   "was": "components/slide/SlideTitle.d.ts",
+   "kind": "component-types",
+   "component": "SlideTitle",
+   "bytes": 457,
+   "fileAt": "project/components/SlideTitle/SlideTitle.d.ts"
+  },
+  {
+   "path": "project/components/slide/SlideTitle.jsx",
+   "was": "components/slide/SlideTitle.jsx",
+   "kind": "component-source",
+   "component": "SlideTitle",
+   "bytes": 2999
+  },
+  {
+   "path": "project/components/slide/SlideTitle.prompt.md",
+   "was": "components/slide/SlideTitle.prompt.md",
+   "kind": "component-guide",
+   "component": "SlideTitle",
+   "bytes": 267,
+   "fileAt": "project/components/SlideTitle/README.md"
+  },
+  {
+   "path": "project/components/slide/iconPaths.js",
+   "was": "components/slide/iconPaths.js",
+   "kind": "component-source",
+   "bytes": 8192
+  },
+  {
+   "path": "project/components/slide/slide.card.html",
+   "was": "components/slide/slide.card.html",
+   "kind": "showcase-page",
+   "group": "Components",
+   "bytes": 2839,
+   "fileAt": "project/components/Slide2/preview.html",
+   "refs": [
+    {
+     "as": "../../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../../_ds_bundle.js",
+     "to": "project/_ds_bundle.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/components/slide/util.js",
+   "was": "components/slide/util.js",
+   "kind": "component-source",
+   "bytes": 1410
+  },
+  {
+   "path": "project/fonts/CALIBRI.TTF",
+   "was": "fonts/CALIBRI.TTF",
+   "kind": "font",
+   "bytes": 1650632
+  },
+  {
+   "path": "project/fonts/CALIBRIB.TTF",
+   "was": "fonts/CALIBRIB.TTF",
+   "kind": "font",
+   "bytes": 1615616
+  },
+  {
+   "path": "project/fonts/CALIBRII.TTF",
+   "was": "fonts/CALIBRII.TTF",
+   "kind": "font",
+   "bytes": 1202512
+  },
+  {
+   "path": "project/fonts/CALIBRIL.TTF",
+   "was": "fonts/CALIBRIL.TTF",
+   "kind": "font",
+   "bytes": 1441448
+  },
+  {
+   "path": "project/fonts/CALIBRILI.TTF",
+   "was": "fonts/CALIBRILI.TTF",
+   "kind": "font",
+   "bytes": 1065868
+  },
+  {
+   "path": "project/fonts/CALIBRIZ.TTF",
+   "was": "fonts/CALIBRIZ.TTF",
+   "kind": "font",
+   "bytes": 1163904
+  },
+  {
+   "path": "project/fonts/Calibri-Bold.ttf",
+   "was": "fonts/Calibri-Bold.ttf",
+   "kind": "font",
+   "bytes": 1615616
+  },
+  {
+   "path": "project/fonts/Calibri-BoldItalic.ttf",
+   "was": "fonts/Calibri-BoldItalic.ttf",
+   "kind": "font",
+   "bytes": 1163904
+  },
+  {
+   "path": "project/fonts/Calibri-Italic.ttf",
+   "was": "fonts/Calibri-Italic.ttf",
+   "kind": "font",
+   "bytes": 1202512
+  },
+  {
+   "path": "project/fonts/Calibri-Light.ttf",
+   "was": "fonts/Calibri-Light.ttf",
+   "kind": "font",
+   "bytes": 1441448
+  },
+  {
+   "path": "project/fonts/Calibri-LightItalic.ttf",
+   "was": "fonts/Calibri-LightItalic.ttf",
+   "kind": "font",
+   "bytes": 1065868
+  },
+  {
+   "path": "project/fonts/Calibri-Regular.ttf",
+   "was": "fonts/Calibri-Regular.ttf",
+   "kind": "font",
+   "bytes": 1650632
+  },
+  {
+   "path": "project/guidelines/brand-backgrounds.html",
+   "was": "guidelines/brand-backgrounds.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 1798,
+   "refs": [
+    {
+     "as": "../assets/bg-sampul.jpg",
+     "to": "project/assets/bg-sampul.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-bagian.jpg",
+     "to": "project/assets/bg-bagian.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-biru.jpg",
+     "to": "project/assets/bg-biru.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-abu.jpg",
+     "to": "project/assets/bg-abu.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-indeks.jpg",
+     "to": "project/assets/bg-indeks.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-penutup.jpg",
+     "to": "project/assets/bg-penutup.jpg",
+     "exists": true
+    },
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/brand-header-art.html",
+   "was": "guidelines/brand-header-art.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 3332,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/brand-logo-dark.html",
+   "was": "guidelines/brand-logo-dark.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 1028,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-white.png",
+     "to": "project/assets/logo-white.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-pln-iconplus-white.png",
+     "to": "project/assets/logo-pln-iconplus-white.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-danantara-white.png",
+     "to": "project/assets/logo-danantara-white.png",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/brand-logo-light.html",
+   "was": "guidelines/brand-logo-light.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 936,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-color.png",
+     "to": "project/assets/logo-color.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-pln-iconplus.png",
+     "to": "project/assets/logo-pln-iconplus.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-danantara.png",
+     "to": "project/assets/logo-danantara.png",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/brand-v7-art.html",
+   "was": "guidelines/brand-v7-art.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 908,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-map.png",
+     "to": "project/assets/arc-map.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-pin.png",
+     "to": "project/assets/arc-pin.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-danantara.png",
+     "to": "project/assets/arc-danantara.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-pln.png",
+     "to": "project/assets/arc-pln.png",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-chart.html",
+   "was": "guidelines/colors-chart.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1940,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-contrast.html",
+   "was": "guidelines/colors-contrast.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 2935,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-core.html",
+   "was": "guidelines/colors-core.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1610,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-dark.html",
+   "was": "guidelines/colors-dark.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1399,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-hd.html",
+   "was": "guidelines/colors-hd.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 2937,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-neutral.html",
+   "was": "guidelines/colors-neutral.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1951,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-status.html",
+   "was": "guidelines/colors-status.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1396,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-v7-risk.html",
+   "was": "guidelines/colors-v7-risk.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1384,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/colors-v7.html",
+   "was": "guidelines/colors-v7.html",
+   "kind": "foundations-page",
+   "group": "Colors",
+   "bytes": 1716,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/grid/grid-1.html",
+   "was": "guidelines/grid/grid-1.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 1992,
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/grid/grid-2.html",
+   "was": "guidelines/grid/grid-2.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 1993,
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/grid/grid-3.html",
+   "was": "guidelines/grid/grid-3.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 2358,
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/grid/grid-4.html",
+   "was": "guidelines/grid/grid-4.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 2700,
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/grid/grid-5.html",
+   "was": "guidelines/grid/grid-5.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 3028,
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/grid/grid-6.html",
+   "was": "guidelines/grid/grid-6.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 5497,
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/hd-anatomy.html",
+   "was": "guidelines/hd-anatomy.html",
+   "kind": "showcase-page",
+   "group": "HD · V8 & V9",
+   "bytes": 3585,
+   "fileAt": "project/components/HdAnatomy/preview.html",
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/hd-validation.html",
+   "was": "guidelines/hd-validation.html",
+   "kind": "showcase-page",
+   "group": "HD · V8 & V9",
+   "bytes": 4764,
+   "fileAt": "project/components/HdValidation/preview.html",
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/icons-3d-korporat.html",
+   "was": "guidelines/icons-3d-korporat.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 24345,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/icons-3d.html",
+   "was": "guidelines/icons-3d.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 6386,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/icons.html",
+   "was": "guidelines/icons.html",
+   "kind": "foundations-page",
+   "group": "Brand",
+   "bytes": 37145,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K01.html",
+   "was": "guidelines/slide-components/K01.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 5037,
+   "fileAt": "project/components/K01/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K02.html",
+   "was": "guidelines/slide-components/K02.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 12741,
+   "fileAt": "project/components/K02/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K03.html",
+   "was": "guidelines/slide-components/K03.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6621,
+   "fileAt": "project/components/K03/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K04.html",
+   "was": "guidelines/slide-components/K04.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 13930,
+   "fileAt": "project/components/K04/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K05.html",
+   "was": "guidelines/slide-components/K05.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9665,
+   "fileAt": "project/components/K05/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K06.html",
+   "was": "guidelines/slide-components/K06.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 5709,
+   "fileAt": "project/components/K06/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K07.html",
+   "was": "guidelines/slide-components/K07.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10617,
+   "fileAt": "project/components/K07/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K08.html",
+   "was": "guidelines/slide-components/K08.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 1267,
+   "fileAt": "project/components/K08/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K09.html",
+   "was": "guidelines/slide-components/K09.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 5040,
+   "fileAt": "project/components/K09/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K10.html",
+   "was": "guidelines/slide-components/K10.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 12739,
+   "fileAt": "project/components/K10/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K11.html",
+   "was": "guidelines/slide-components/K11.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 13113,
+   "fileAt": "project/components/K11/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K12.html",
+   "was": "guidelines/slide-components/K12.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 3920,
+   "fileAt": "project/components/K12/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K13.html",
+   "was": "guidelines/slide-components/K13.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 12346,
+   "fileAt": "project/components/K13/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K14.html",
+   "was": "guidelines/slide-components/K14.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 11614,
+   "fileAt": "project/components/K14/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K15.html",
+   "was": "guidelines/slide-components/K15.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10088,
+   "fileAt": "project/components/K15/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K16.html",
+   "was": "guidelines/slide-components/K16.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6674,
+   "fileAt": "project/components/K16/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K17.html",
+   "was": "guidelines/slide-components/K17.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 7920,
+   "fileAt": "project/components/K17/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K18.html",
+   "was": "guidelines/slide-components/K18.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6826,
+   "fileAt": "project/components/K18/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K19.html",
+   "was": "guidelines/slide-components/K19.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 13936,
+   "fileAt": "project/components/K19/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K20.html",
+   "was": "guidelines/slide-components/K20.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 11517,
+   "fileAt": "project/components/K20/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K21.html",
+   "was": "guidelines/slide-components/K21.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6616,
+   "fileAt": "project/components/K21/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K22.html",
+   "was": "guidelines/slide-components/K22.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 12754,
+   "fileAt": "project/components/K22/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K23.html",
+   "was": "guidelines/slide-components/K23.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10085,
+   "fileAt": "project/components/K23/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K24.html",
+   "was": "guidelines/slide-components/K24.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6620,
+   "fileAt": "project/components/K24/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K25.html",
+   "was": "guidelines/slide-components/K25.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9711,
+   "fileAt": "project/components/K25/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K26.html",
+   "was": "guidelines/slide-components/K26.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 4123,
+   "fileAt": "project/components/K26/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K27.html",
+   "was": "guidelines/slide-components/K27.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 5623,
+   "fileAt": "project/components/K27/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K28.html",
+   "was": "guidelines/slide-components/K28.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 8421,
+   "fileAt": "project/components/K28/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K29.html",
+   "was": "guidelines/slide-components/K29.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9642,
+   "fileAt": "project/components/K29/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K30.html",
+   "was": "guidelines/slide-components/K30.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10515,
+   "fileAt": "project/components/K30/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K31.html",
+   "was": "guidelines/slide-components/K31.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 15126,
+   "fileAt": "project/components/K31/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K32.html",
+   "was": "guidelines/slide-components/K32.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 7669,
+   "fileAt": "project/components/K32/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K33.html",
+   "was": "guidelines/slide-components/K33.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10710,
+   "fileAt": "project/components/K33/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K34.html",
+   "was": "guidelines/slide-components/K34.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10721,
+   "fileAt": "project/components/K34/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K35.html",
+   "was": "guidelines/slide-components/K35.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9640,
+   "fileAt": "project/components/K35/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K36.html",
+   "was": "guidelines/slide-components/K36.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10959,
+   "fileAt": "project/components/K36/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K37.html",
+   "was": "guidelines/slide-components/K37.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 15121,
+   "fileAt": "project/components/K37/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K38.html",
+   "was": "guidelines/slide-components/K38.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 11244,
+   "fileAt": "project/components/K38/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K39.html",
+   "was": "guidelines/slide-components/K39.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6844,
+   "fileAt": "project/components/K39/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K40.html",
+   "was": "guidelines/slide-components/K40.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 7658,
+   "fileAt": "project/components/K40/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K41.html",
+   "was": "guidelines/slide-components/K41.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 14938,
+   "fileAt": "project/components/K41/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K42.html",
+   "was": "guidelines/slide-components/K42.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 11036,
+   "fileAt": "project/components/K42/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K43.html",
+   "was": "guidelines/slide-components/K43.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 16223,
+   "fileAt": "project/components/K43/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K44.html",
+   "was": "guidelines/slide-components/K44.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 7637,
+   "fileAt": "project/components/K44/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K45.html",
+   "was": "guidelines/slide-components/K45.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10494,
+   "fileAt": "project/components/K45/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K46.html",
+   "was": "guidelines/slide-components/K46.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9300,
+   "fileAt": "project/components/K46/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K47.html",
+   "was": "guidelines/slide-components/K47.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9701,
+   "fileAt": "project/components/K47/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K48.html",
+   "was": "guidelines/slide-components/K48.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 13760,
+   "fileAt": "project/components/K48/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K49.html",
+   "was": "guidelines/slide-components/K49.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 6964,
+   "fileAt": "project/components/K49/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K50.html",
+   "was": "guidelines/slide-components/K50.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 9131,
+   "fileAt": "project/components/K50/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K51.html",
+   "was": "guidelines/slide-components/K51.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 13113,
+   "fileAt": "project/components/K51/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K52.html",
+   "was": "guidelines/slide-components/K52.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 12331,
+   "fileAt": "project/components/K52/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K53.html",
+   "was": "guidelines/slide-components/K53.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 10927,
+   "fileAt": "project/components/K53/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K54.html",
+   "was": "guidelines/slide-components/K54.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 8421,
+   "fileAt": "project/components/K54/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K55.html",
+   "was": "guidelines/slide-components/K55.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 21674,
+   "fileAt": "project/components/K55/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K56.html",
+   "was": "guidelines/slide-components/K56.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 21662,
+   "fileAt": "project/components/K56/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K57.html",
+   "was": "guidelines/slide-components/K57.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 21666,
+   "fileAt": "project/components/K57/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K58.html",
+   "was": "guidelines/slide-components/K58.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 21658,
+   "fileAt": "project/components/K58/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K59.html",
+   "was": "guidelines/slide-components/K59.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 17077,
+   "fileAt": "project/components/K59/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K60.html",
+   "was": "guidelines/slide-components/K60.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 16620,
+   "fileAt": "project/components/K60/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/slide-components/K61.html",
+   "was": "guidelines/slide-components/K61.html",
+   "kind": "showcase-page",
+   "group": "Slide Components (K01–K61)",
+   "bytes": 16803,
+   "fileAt": "project/components/K61/preview.html",
+   "refs": [
+    {
+     "as": "../../slides/slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/spacing-canvas.html",
+   "was": "guidelines/spacing-canvas.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 1673,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/spacing-radius.html",
+   "was": "guidelines/spacing-radius.html",
+   "kind": "foundations-page",
+   "group": "Spacing",
+   "bytes": 2264,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/style-pilihan.html",
+   "was": "guidelines/style-pilihan.html",
+   "kind": "showcase-page",
+   "group": "Style warna",
+   "bytes": 8084,
+   "fileAt": "project/components/StylePilihan/preview.html",
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/theme-matrix.html",
+   "was": "guidelines/theme-matrix.html",
+   "kind": "showcase-page",
+   "group": "Style warna",
+   "bytes": 4526,
+   "fileAt": "project/components/ThemeMatrix/preview.html",
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/themes.html",
+   "was": "guidelines/themes.html",
+   "kind": "foundations-page",
+   "group": "Style warna",
+   "bytes": 11216,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-danantara.png",
+     "to": "project/assets/logo-danantara.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-pln-iconplus.png",
+     "to": "project/assets/logo-pln-iconplus.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-danantara-white.png",
+     "to": "project/assets/logo-danantara-white.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-pln-iconplus-white.png",
+     "to": "project/assets/logo-pln-iconplus-white.png",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/type-body.html",
+   "was": "guidelines/type-body.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1973,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/type-display.html",
+   "was": "guidelines/type-display.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1342,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/type-format.html",
+   "was": "guidelines/type-format.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1004,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/type-numbers.html",
+   "was": "guidelines/type-numbers.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1567,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/type-titles.html",
+   "was": "guidelines/type-titles.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 1597,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/guidelines/type-v7.html",
+   "was": "guidelines/type-v7.html",
+   "kind": "foundations-page",
+   "group": "Type",
+   "bytes": 2010,
+   "refs": [
+    {
+     "as": "../styles.css",
+     "to": "project/styles.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/scratch/doc-text.txt",
+   "was": "scratch/doc-text.txt",
+   "kind": "data",
+   "bytes": 47582
+  },
+  {
+   "path": "project/scratch/header-sheet.jpg",
+   "was": "scratch/header-sheet.jpg",
+   "kind": "image",
+   "bytes": 2749322
+  },
+  {
+   "path": "project/scratch/index.json",
+   "was": "scratch/index.json",
+   "kind": "data",
+   "bytes": 27123
+  },
+  {
+   "path": "project/scratch/ref-colors.css",
+   "was": "scratch/ref-colors.css",
+   "kind": "stylesheet",
+   "bytes": 2776
+  },
+  {
+   "path": "project/scratch/ref-distribusi.html",
+   "was": "scratch/ref-distribusi.html",
+   "kind": "page",
+   "bytes": 99655,
+   "refs": [
+    {
+     "as": "./support.js",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/tokens/fonts.css",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/tokens/colors.css",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/tokens/typography.css",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/tokens/spacing.css",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/tokens/elevation.css",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/styles.css",
+     "exists": false
+    },
+    {
+     "as": "_ds/pln-icon-plus-business-plan-deck-system-235776f1-1749-4e79-b6a7-4bbc21286b98/_ds_bundle.js",
+     "exists": false
+    },
+    {
+     "as": "assets/cover-jaringan-20kv.webp",
+     "exists": false
+    },
+    {
+     "as": "assets/logo-danantara-indonesia.png",
+     "exists": false
+    },
+    {
+     "as": "assets/logo-pln-icon-plus.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/pin.png",
+     "exists": false
+    },
+    {
+     "as": "assets/bagian01-petugas-jaringan.webp",
+     "exists": false
+    },
+    {
+     "as": "assets/header-map-indonesia.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/gear-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/arrow-right-blue.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/transmission-tower-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/share-nodes-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/people-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/map-pin-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/building-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/lightbulb-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-1.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-2.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-3.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-4.png",
+     "exists": false
+    },
+    {
+     "as": "assets/bagian02-control-room.webp",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/shield-check-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/clock-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/server-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/sync-screens-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/warning-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/bars-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/target-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/database-network-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/hierarchy-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/photo-energy-network.jpeg",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/star-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/clipboard-check-yellow.png",
+     "exists": false
+    },
+    {
+     "as": "assets/penutup-distribusi-light.webp",
+     "exists": false
+    }
+   ]
+  },
+  {
+   "path": "project/scratch/ref-smoc.html",
+   "was": "scratch/ref-smoc.html",
+   "kind": "page",
+   "bytes": 192187,
+   "refs": [
+    {
+     "as": "./support.js",
+     "exists": false
+    },
+    {
+     "as": "assets/logo-danantara-indonesia.png",
+     "exists": false
+    },
+    {
+     "as": "assets/logo-pln-icon-plus.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/pin.png",
+     "exists": false
+    },
+    {
+     "as": "assets/photo-city-grid.jpeg",
+     "exists": false
+    },
+    {
+     "as": "assets/header-map-indonesia.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/warning-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/lightbulb-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/rocket-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-1.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-2.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-3.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/badge-4.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/clipboard-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/target-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/building-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/transmission-tower-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/share-nodes-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/map-pin-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/shield-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/sync-screens-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/gears-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/arrow-right-blue.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/database-network-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/bars-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/server-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/shield-check-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/diamond-yellow.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/headset-yellow.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/gear-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/people-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/handshake-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/growth-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/calendar-pale.png",
+     "exists": false
+    },
+    {
+     "as": "assets/icons/dollar-solid.png",
+     "exists": false
+    },
+    {
+     "as": "assets/photo-energy-network.jpeg",
+     "exists": false
+    }
+   ]
+  },
+  {
+   "path": "project/scratch/stripped.html",
+   "was": "scratch/stripped.html",
+   "kind": "page",
+   "bytes": 1350154
+  },
+  {
+   "path": "project/scratch/v8-grid.jpg",
+   "was": "scratch/v8-grid.jpg",
+   "kind": "image",
+   "bytes": 44112
+  },
+  {
+   "path": "project/slides/deck-stage.js",
+   "was": "slides/deck-stage.js",
+   "kind": "other",
+   "bytes": 136293
+  },
+  {
+   "path": "project/slides/layouts/BLUE.html",
+   "was": "slides/layouts/BLUE.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 808,
+   "fileAt": "project/components/BLUE/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/layouts/COVER.html",
+   "was": "slides/layouts/COVER.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 1080,
+   "fileAt": "project/components/COVER/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/layouts/END.html",
+   "was": "slides/layouts/END.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 744,
+   "fileAt": "project/components/END/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/layouts/GRAY.html",
+   "was": "slides/layouts/GRAY.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 825,
+   "fileAt": "project/components/GRAY/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/layouts/INDEX.html",
+   "was": "slides/layouts/INDEX.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 872,
+   "fileAt": "project/components/INDEX/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/layouts/SECTION.html",
+   "was": "slides/layouts/SECTION.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 781,
+   "fileAt": "project/components/SECTION/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/layouts/WHITE.html",
+   "was": "slides/layouts/WHITE.html",
+   "kind": "showcase-page",
+   "group": "Slides · Layout master",
+   "bytes": 799,
+   "fileAt": "project/components/WHITE/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/slide.css",
+   "was": "slides/slide.css",
+   "kind": "stylesheet",
+   "bytes": 3076,
+   "refs": [
+    {
+     "as": "../tokens/fonts.css",
+     "to": "project/tokens/fonts.css",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-color.png",
+     "to": "project/assets/logo-color.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/logo-white.png",
+     "to": "project/assets/logo-white.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-sampul.jpg",
+     "to": "project/assets/bg-sampul.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-bagian.jpg",
+     "to": "project/assets/bg-bagian.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-abu.jpg",
+     "to": "project/assets/bg-abu.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-biru.jpg",
+     "to": "project/assets/bg-biru.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-penutup.jpg",
+     "to": "project/assets/bg-penutup.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/bg-indeks.jpg",
+     "to": "project/assets/bg-indeks.jpg",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-map.png",
+     "to": "project/assets/arc-map.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-danantara.png",
+     "to": "project/assets/arc-danantara.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-pln.png",
+     "to": "project/assets/arc-pln.png",
+     "exists": true
+    },
+    {
+     "as": "../assets/arc-pin.png",
+     "to": "project/assets/arc-pin.png",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-01.html",
+   "was": "slides/v1/V1-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 5599,
+   "fileAt": "project/components/V101/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-02.html",
+   "was": "slides/v1/V1-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 1204,
+   "fileAt": "project/components/V102/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-03.html",
+   "was": "slides/v1/V1-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 4948,
+   "fileAt": "project/components/V103/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-04.html",
+   "was": "slides/v1/V1-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 6885,
+   "fileAt": "project/components/V104/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-05.html",
+   "was": "slides/v1/V1-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 6602,
+   "fileAt": "project/components/V105/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-06.html",
+   "was": "slides/v1/V1-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 7840,
+   "fileAt": "project/components/V106/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/V1-COVER.html",
+   "was": "slides/v1/V1-COVER.html",
+   "kind": "showcase-page",
+   "group": "Slides · V1 Executive Formal",
+   "bytes": 1093,
+   "fileAt": "project/components/V1COVER/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v1/index.html",
+   "was": "slides/v1/index.html",
+   "kind": "page",
+   "bytes": 32408,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-01.html",
+   "was": "slides/v2/V2-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 12664,
+   "fileAt": "project/components/V201/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-02.html",
+   "was": "slides/v2/V2-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 11509,
+   "fileAt": "project/components/V202/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-03.html",
+   "was": "slides/v2/V2-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 14851,
+   "fileAt": "project/components/V203/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-04.html",
+   "was": "slides/v2/V2-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 9060,
+   "fileAt": "project/components/V204/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-05.html",
+   "was": "slides/v2/V2-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 10446,
+   "fileAt": "project/components/V205/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-06.html",
+   "was": "slides/v2/V2-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 10892,
+   "fileAt": "project/components/V206/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/V2-COVER.html",
+   "was": "slides/v2/V2-COVER.html",
+   "kind": "showcase-page",
+   "group": "Slides · V2 Analitik Korporat",
+   "bytes": 1095,
+   "fileAt": "project/components/V2COVER/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v2/index.html",
+   "was": "slides/v2/index.html",
+   "kind": "page",
+   "bytes": 66067,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-01.html",
+   "was": "slides/v3/V3-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 10526,
+   "fileAt": "project/components/V301/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-02.html",
+   "was": "slides/v3/V3-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 10019,
+   "fileAt": "project/components/V302/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-03.html",
+   "was": "slides/v3/V3-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 16155,
+   "fileAt": "project/components/V303/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-04.html",
+   "was": "slides/v3/V3-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 10962,
+   "fileAt": "project/components/V304/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-05.html",
+   "was": "slides/v3/V3-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 15058,
+   "fileAt": "project/components/V305/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-06.html",
+   "was": "slides/v3/V3-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 5522,
+   "fileAt": "project/components/V306/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/V3-COVER.html",
+   "was": "slides/v3/V3-COVER.html",
+   "kind": "showcase-page",
+   "group": "Slides · V3 Solution Blueprint",
+   "bytes": 1097,
+   "fileAt": "project/components/V3COVER/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v3/index.html",
+   "was": "slides/v3/index.html",
+   "kind": "page",
+   "bytes": 67490,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-01.html",
+   "was": "slides/v4/V4-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 6556,
+   "fileAt": "project/components/V401/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-02.html",
+   "was": "slides/v4/V4-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 9633,
+   "fileAt": "project/components/V402/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-03.html",
+   "was": "slides/v4/V4-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 11177,
+   "fileAt": "project/components/V403/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-04.html",
+   "was": "slides/v4/V4-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 6780,
+   "fileAt": "project/components/V404/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-05.html",
+   "was": "slides/v4/V4-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 4052,
+   "fileAt": "project/components/V405/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-06.html",
+   "was": "slides/v4/V4-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 6759,
+   "fileAt": "project/components/V406/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/V4-COVER.html",
+   "was": "slides/v4/V4-COVER.html",
+   "kind": "showcase-page",
+   "group": "Slides · V4 Diskusi Strategis & FGD",
+   "bytes": 1111,
+   "fileAt": "project/components/V4COVER/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v4/index.html",
+   "was": "slides/v4/index.html",
+   "kind": "page",
+   "bytes": 44099,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-01.html",
+   "was": "slides/v5/V5-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 13035,
+   "fileAt": "project/components/V501/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-02.html",
+   "was": "slides/v5/V5-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 13684,
+   "fileAt": "project/components/V502/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-03.html",
+   "was": "slides/v5/V5-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 3852,
+   "fileAt": "project/components/V503/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-04.html",
+   "was": "slides/v5/V5-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 7595,
+   "fileAt": "project/components/V504/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-05.html",
+   "was": "slides/v5/V5-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 7583,
+   "fileAt": "project/components/V505/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-06.html",
+   "was": "slides/v5/V5-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 7566,
+   "fileAt": "project/components/V506/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/V5-COVER.html",
+   "was": "slides/v5/V5-COVER.html",
+   "kind": "showcase-page",
+   "group": "Slides · V5 Dashboard Gelap",
+   "bytes": 1091,
+   "fileAt": "project/components/V5COVER/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v5/index.html",
+   "was": "slides/v5/index.html",
+   "kind": "page",
+   "bytes": 52576,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-01.html",
+   "was": "slides/v6/V6-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 1121,
+   "fileAt": "project/components/V601/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-02.html",
+   "was": "slides/v6/V6-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 10261,
+   "fileAt": "project/components/V602/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-03.html",
+   "was": "slides/v6/V6-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 13872,
+   "fileAt": "project/components/V603/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-04.html",
+   "was": "slides/v6/V6-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 9236,
+   "fileAt": "project/components/V604/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-05.html",
+   "was": "slides/v6/V6-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 15050,
+   "fileAt": "project/components/V605/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-06.html",
+   "was": "slides/v6/V6-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 11456,
+   "fileAt": "project/components/V606/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-07.html",
+   "was": "slides/v6/V6-07.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 10652,
+   "fileAt": "project/components/V607/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-08.html",
+   "was": "slides/v6/V6-08.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 9585,
+   "fileAt": "project/components/V608/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-09.html",
+   "was": "slides/v6/V6-09.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 12259,
+   "fileAt": "project/components/V609/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-10.html",
+   "was": "slides/v6/V6-10.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 10863,
+   "fileAt": "project/components/V610/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-11.html",
+   "was": "slides/v6/V6-11.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 10439,
+   "fileAt": "project/components/V611/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/V6-12.html",
+   "was": "slides/v6/V6-12.html",
+   "kind": "showcase-page",
+   "group": "Slides · V6 Business Plan Layouting",
+   "bytes": 8349,
+   "fileAt": "project/components/V612/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v6/index.html",
+   "was": "slides/v6/index.html",
+   "kind": "page",
+   "bytes": 119238,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-01.html",
+   "was": "slides/v7/V7-01.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 1295,
+   "fileAt": "project/components/V701/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-02.html",
+   "was": "slides/v7/V7-02.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 21600,
+   "fileAt": "project/components/V702/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-03.html",
+   "was": "slides/v7/V7-03.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 17005,
+   "fileAt": "project/components/V703/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-04.html",
+   "was": "slides/v7/V7-04.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 16737,
+   "fileAt": "project/components/V704/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-05.html",
+   "was": "slides/v7/V7-05.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 16269,
+   "fileAt": "project/components/V705/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-06.html",
+   "was": "slides/v7/V7-06.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 13235,
+   "fileAt": "project/components/V706/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-07.html",
+   "was": "slides/v7/V7-07.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 16961,
+   "fileAt": "project/components/V707/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-08.html",
+   "was": "slides/v7/V7-08.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 11300,
+   "fileAt": "project/components/V708/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-09.html",
+   "was": "slides/v7/V7-09.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 9271,
+   "fileAt": "project/components/V709/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-10.html",
+   "was": "slides/v7/V7-10.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 16550,
+   "fileAt": "project/components/V710/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-11.html",
+   "was": "slides/v7/V7-11.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 11991,
+   "fileAt": "project/components/V711/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-12.html",
+   "was": "slides/v7/V7-12.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 15313,
+   "fileAt": "project/components/V712/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/V7-13.html",
+   "was": "slides/v7/V7-13.html",
+   "kind": "showcase-page",
+   "group": "Slides · V7 Business Plan ArcGIS",
+   "bytes": 783,
+   "fileAt": "project/components/V713/preview.html",
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/slides/v7/index.html",
+   "was": "slides/v7/index.html",
+   "kind": "page",
+   "bytes": 152274,
+   "refs": [
+    {
+     "as": "../slide.css",
+     "to": "project/slides/slide.css",
+     "exists": true
+    },
+    {
+     "as": "../deck-stage.js",
+     "to": "project/slides/deck-stage.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/styles.css",
+   "was": "styles.css",
+   "kind": "global-stylesheet",
+   "bytes": 346,
+   "unread": true,
+   "alsoReadAs": "project/components/bundle.css",
+   "refs": [
+    {
+     "as": "tokens/fonts.css",
+     "to": "project/tokens/fonts.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/colors.css",
+     "to": "project/tokens/colors.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/typography.css",
+     "to": "project/tokens/typography.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/spacing.css",
+     "to": "project/tokens/spacing.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/backgrounds.css",
+     "to": "project/tokens/backgrounds.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/hd.css",
+     "to": "project/tokens/hd.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/imagery.css",
+     "to": "project/tokens/imagery.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/icons-3d.css",
+     "to": "project/tokens/icons-3d.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/themes.css",
+     "to": "project/tokens/themes.css",
+     "exists": true
+    },
+    {
+     "as": "tokens/base.css",
+     "to": "project/tokens/base.css",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v1-executive-formal/V1ExecutiveFormal.dc.html",
+   "was": "templates/v1-executive-formal/V1ExecutiveFormal.dc.html",
+   "kind": "kit-piece",
+   "template": "V1 · Executive Formal",
+   "bytes": 35250,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v1-executive-formal/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v1-executive-formal/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v1-executive-formal/deck-stage.js",
+   "was": "templates/v1-executive-formal/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V1 · Executive Formal",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v1-executive-formal/ds-base.js",
+   "was": "templates/v1-executive-formal/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V1 · Executive Formal",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v1-executive-formal/support.js",
+   "was": "templates/v1-executive-formal/support.js",
+   "kind": "kit-piece",
+   "template": "V1 · Executive Formal",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v10-usulan-komersial/V10UsulanKomersial.dc.html",
+   "was": "templates/v10-usulan-komersial/V10UsulanKomersial.dc.html",
+   "kind": "kit-piece",
+   "template": "V10 · Usulan Komersial & Kontrak",
+   "bytes": 32251,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v10-usulan-komersial/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v10-usulan-komersial/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v10-usulan-komersial/deck-stage.js",
+   "was": "templates/v10-usulan-komersial/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V10 · Usulan Komersial & Kontrak",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v10-usulan-komersial/ds-base.js",
+   "was": "templates/v10-usulan-komersial/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V10 · Usulan Komersial & Kontrak",
+   "bytes": 1088
+  },
+  {
+   "path": "project/templates/v10-usulan-komersial/support.js",
+   "was": "templates/v10-usulan-komersial/support.js",
+   "kind": "kit-piece",
+   "template": "V10 · Usulan Komersial & Kontrak",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v2-analitik-korporat/V2AnalitikKorporat.dc.html",
+   "was": "templates/v2-analitik-korporat/V2AnalitikKorporat.dc.html",
+   "kind": "kit-piece",
+   "template": "V2 · Analitik Korporat",
+   "bytes": 71011,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v2-analitik-korporat/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v2-analitik-korporat/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v2-analitik-korporat/deck-stage.js",
+   "was": "templates/v2-analitik-korporat/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V2 · Analitik Korporat",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v2-analitik-korporat/ds-base.js",
+   "was": "templates/v2-analitik-korporat/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V2 · Analitik Korporat",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v2-analitik-korporat/support.js",
+   "was": "templates/v2-analitik-korporat/support.js",
+   "kind": "kit-piece",
+   "template": "V2 · Analitik Korporat",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v3-solution-blueprint/V3SolutionBlueprint.dc.html",
+   "was": "templates/v3-solution-blueprint/V3SolutionBlueprint.dc.html",
+   "kind": "kit-piece",
+   "template": "V3 · Solution Blueprint",
+   "bytes": 72287,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v3-solution-blueprint/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v3-solution-blueprint/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v3-solution-blueprint/deck-stage.js",
+   "was": "templates/v3-solution-blueprint/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V3 · Solution Blueprint",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v3-solution-blueprint/ds-base.js",
+   "was": "templates/v3-solution-blueprint/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V3 · Solution Blueprint",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v3-solution-blueprint/support.js",
+   "was": "templates/v3-solution-blueprint/support.js",
+   "kind": "kit-piece",
+   "template": "V3 · Solution Blueprint",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v4-diskusi-fgd/V4DiskusiFgd.dc.html",
+   "was": "templates/v4-diskusi-fgd/V4DiskusiFgd.dc.html",
+   "kind": "kit-piece",
+   "template": "V4 · Diskusi Strategis & FGD",
+   "bytes": 48014,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v4-diskusi-fgd/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v4-diskusi-fgd/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v4-diskusi-fgd/deck-stage.js",
+   "was": "templates/v4-diskusi-fgd/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V4 · Diskusi Strategis & FGD",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v4-diskusi-fgd/ds-base.js",
+   "was": "templates/v4-diskusi-fgd/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V4 · Diskusi Strategis & FGD",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v4-diskusi-fgd/support.js",
+   "was": "templates/v4-diskusi-fgd/support.js",
+   "kind": "kit-piece",
+   "template": "V4 · Diskusi Strategis & FGD",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v5-dashboard-gelap/V5DashboardGelap.dc.html",
+   "was": "templates/v5-dashboard-gelap/V5DashboardGelap.dc.html",
+   "kind": "kit-piece",
+   "template": "V5 · Dashboard Gelap",
+   "bytes": 58056,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v5-dashboard-gelap/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v5-dashboard-gelap/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v5-dashboard-gelap/deck-stage.js",
+   "was": "templates/v5-dashboard-gelap/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V5 · Dashboard Gelap",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v5-dashboard-gelap/ds-base.js",
+   "was": "templates/v5-dashboard-gelap/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V5 · Dashboard Gelap",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v5-dashboard-gelap/support.js",
+   "was": "templates/v5-dashboard-gelap/support.js",
+   "kind": "kit-piece",
+   "template": "V5 · Dashboard Gelap",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v6-business-plan/V6BusinessPlan.dc.html",
+   "was": "templates/v6-business-plan/V6BusinessPlan.dc.html",
+   "kind": "kit-piece",
+   "template": "V6 · Business Plan Layouting",
+   "bytes": 126258,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v6-business-plan/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v6-business-plan/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v6-business-plan/deck-stage.js",
+   "was": "templates/v6-business-plan/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V6 · Business Plan Layouting",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v6-business-plan/ds-base.js",
+   "was": "templates/v6-business-plan/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V6 · Business Plan Layouting",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v6-business-plan/support.js",
+   "was": "templates/v6-business-plan/support.js",
+   "kind": "kit-piece",
+   "template": "V6 · Business Plan Layouting",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v7-business-plan-arcgis/V7BusinessPlanArcgis.dc.html",
+   "was": "templates/v7-business-plan-arcgis/V7BusinessPlanArcgis.dc.html",
+   "kind": "kit-piece",
+   "template": "V7 · Business Plan ArcGIS",
+   "bytes": 163407,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v7-business-plan-arcgis/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v7-business-plan-arcgis/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v7-business-plan-arcgis/deck-stage.js",
+   "was": "templates/v7-business-plan-arcgis/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V7 · Business Plan ArcGIS",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v7-business-plan-arcgis/ds-base.js",
+   "was": "templates/v7-business-plan-arcgis/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V7 · Business Plan ArcGIS",
+   "bytes": 924
+  },
+  {
+   "path": "project/templates/v7-business-plan-arcgis/support.js",
+   "was": "templates/v7-business-plan-arcgis/support.js",
+   "kind": "kit-piece",
+   "template": "V7 · Business Plan ArcGIS",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v8-materi-pengenalan/V8MateriPengenalan.dc.html",
+   "was": "templates/v8-materi-pengenalan/V8MateriPengenalan.dc.html",
+   "kind": "kit-piece",
+   "template": "V8 · Materi Pengenalan",
+   "bytes": 54111,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v8-materi-pengenalan/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v8-materi-pengenalan/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v8-materi-pengenalan/deck-stage.js",
+   "was": "templates/v8-materi-pengenalan/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V8 · Materi Pengenalan",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v8-materi-pengenalan/ds-base.js",
+   "was": "templates/v8-materi-pengenalan/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V8 · Materi Pengenalan",
+   "bytes": 904
+  },
+  {
+   "path": "project/templates/v8-materi-pengenalan/support.js",
+   "was": "templates/v8-materi-pengenalan/support.js",
+   "kind": "kit-piece",
+   "template": "V8 · Materi Pengenalan",
+   "bytes": 69150
+  },
+  {
+   "path": "project/templates/v9-grand-design/V9GrandDesign.dc.html",
+   "was": "templates/v9-grand-design/V9GrandDesign.dc.html",
+   "kind": "kit-piece",
+   "template": "V9 · Grand Design Solution",
+   "bytes": 41016,
+   "refs": [
+    {
+     "as": "./support.js",
+     "to": "project/templates/v9-grand-design/support.js",
+     "exists": true
+    },
+    {
+     "as": "./ds-base.js",
+     "to": "project/templates/v9-grand-design/ds-base.js",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/templates/v9-grand-design/deck-stage.js",
+   "was": "templates/v9-grand-design/deck-stage.js",
+   "kind": "kit-piece",
+   "template": "V9 · Grand Design Solution",
+   "bytes": 136293
+  },
+  {
+   "path": "project/templates/v9-grand-design/ds-base.js",
+   "was": "templates/v9-grand-design/ds-base.js",
+   "kind": "kit-piece",
+   "template": "V9 · Grand Design Solution",
+   "bytes": 904
+  },
+  {
+   "path": "project/templates/v9-grand-design/support.js",
+   "was": "templates/v9-grand-design/support.js",
+   "kind": "kit-piece",
+   "template": "V9 · Grand Design Solution",
+   "bytes": 69150
+  },
+  {
+   "path": "project/tokens/backgrounds.css",
+   "was": "tokens/backgrounds.css",
+   "kind": "global-stylesheet",
+   "bytes": 763297
+  },
+  {
+   "path": "project/tokens/base.css",
+   "was": "tokens/base.css",
+   "kind": "global-stylesheet",
+   "bytes": 148
+  },
+  {
+   "path": "project/tokens/colors.css",
+   "was": "tokens/colors.css",
+   "kind": "global-stylesheet",
+   "bytes": 2266
+  },
+  {
+   "path": "project/tokens/fonts.css",
+   "was": "tokens/fonts.css",
+   "kind": "global-stylesheet",
+   "bytes": 952,
+   "refs": [
+    {
+     "as": "../fonts/Calibri-Light.ttf",
+     "to": "project/fonts/Calibri-Light.ttf",
+     "exists": true
+    },
+    {
+     "as": "../fonts/Calibri-LightItalic.ttf",
+     "to": "project/fonts/Calibri-LightItalic.ttf",
+     "exists": true
+    },
+    {
+     "as": "../fonts/Calibri-Regular.ttf",
+     "to": "project/fonts/Calibri-Regular.ttf",
+     "exists": true
+    },
+    {
+     "as": "../fonts/Calibri-Italic.ttf",
+     "to": "project/fonts/Calibri-Italic.ttf",
+     "exists": true
+    },
+    {
+     "as": "../fonts/Calibri-Bold.ttf",
+     "to": "project/fonts/Calibri-Bold.ttf",
+     "exists": true
+    },
+    {
+     "as": "../fonts/Calibri-BoldItalic.ttf",
+     "to": "project/fonts/Calibri-BoldItalic.ttf",
+     "exists": true
+    }
+   ]
+  },
+  {
+   "path": "project/tokens/hd.css",
+   "was": "tokens/hd.css",
+   "kind": "global-stylesheet",
+   "bytes": 2483
+  },
+  {
+   "path": "project/tokens/icons-3d.css",
+   "was": "tokens/icons-3d.css",
+   "kind": "global-stylesheet",
+   "bytes": 2160259
+  },
+  {
+   "path": "project/tokens/imagery.css",
+   "was": "tokens/imagery.css",
+   "kind": "global-stylesheet",
+   "bytes": 879249
+  },
+  {
+   "path": "project/tokens/spacing.css",
+   "was": "tokens/spacing.css",
+   "kind": "global-stylesheet",
+   "bytes": 1202
+  },
+  {
+   "path": "project/tokens/themes.css",
+   "was": "tokens/themes.css",
+   "kind": "global-stylesheet",
+   "bytes": 5400
+  },
+  {
+   "path": "project/tokens/typography.css",
+   "was": "tokens/typography.css",
+   "kind": "global-stylesheet",
+   "bytes": 1362
+  },
+  {
+   "path": "project/uploads/Business Plan_template-a14e4480.pptx",
+   "was": "uploads/Business Plan_template-a14e4480.pptx",
+   "kind": "document",
+   "bytes": 20956621
+  },
+  {
+   "path": "project/uploads/Business Plan_template-dc03478b.pptx",
+   "was": "uploads/Business Plan_template-dc03478b.pptx",
+   "kind": "document",
+   "bytes": 20906094
+  },
+  {
+   "path": "project/uploads/Business Plan_template.pptx",
+   "was": "uploads/Business Plan_template.pptx",
+   "kind": "document",
+   "bytes": 20956621
+  },
+  {
+   "path": "project/uploads/Danantara LOGO_Main .png",
+   "was": "uploads/Danantara LOGO_Main .png",
+   "kind": "image",
+   "bytes": 62768
+  },
+  {
+   "path": "project/uploads/Ekosistem Energi Terpadu di Lanskap Modern.png",
+   "was": "uploads/Ekosistem Energi Terpadu di Lanskap Modern.png",
+   "kind": "image",
+   "bytes": 1574931
+  },
+  {
+   "path": "project/uploads/Ilustrasi Energi Bersih dan Transmisi Listrik.png",
+   "was": "uploads/Ilustrasi Energi Bersih dan Transmisi Listrik.png",
+   "kind": "image",
+   "bytes": 1352752
+  },
+  {
+   "path": "project/uploads/Jaringan Energi Cerdas di Kota Hijau.png",
+   "was": "uploads/Jaringan Energi Cerdas di Kota Hijau.png",
+   "kind": "image",
+   "bytes": 1231227
+  },
+  {
+   "path": "project/uploads/Lanskap Energi Pintar Futuristik.png",
+   "was": "uploads/Lanskap Energi Pintar Futuristik.png",
+   "kind": "image",
+   "bytes": 1278803
+  },
+  {
+   "path": "project/uploads/Logo PLN_SH-Icon Plus (PUTIH).png",
+   "was": "uploads/Logo PLN_SH-Icon Plus (PUTIH).png",
+   "kind": "image",
+   "bytes": 37656
+  },
+  {
+   "path": "project/uploads/Logo PLN_SH-Icon Plus.png",
+   "was": "uploads/Logo PLN_SH-Icon Plus.png",
+   "kind": "image",
+   "bytes": 29013
+  },
+  {
+   "path": "project/uploads/Logo danantara -WHITE.png",
+   "was": "uploads/Logo danantara -WHITE.png",
+   "kind": "image",
+   "bytes": 99119
+  },
+  {
+   "path": "project/uploads/Panorama Energi Bersih dan Terbarukan.png",
+   "was": "uploads/Panorama Energi Bersih dan Terbarukan.png",
+   "kind": "image",
+   "bytes": 1278132
+  },
+  {
+   "path": "project/uploads/Panorama Energi Terbarukan Minimalis.png",
+   "was": "uploads/Panorama Energi Terbarukan Minimalis.png",
+   "kind": "image",
+   "bytes": 1118406
+  },
+  {
+   "path": "project/uploads/Panorama Infrastruktur Energi Bersih.png",
+   "was": "uploads/Panorama Infrastruktur Energi Bersih.png",
+   "kind": "image",
+   "bytes": 1326669
+  },
+  {
+   "path": "project/uploads/Penyesuaian Nilai Kontrak Realokasi Ruang Lingkup CRM Fase 2 PLN EMI.pdf",
+   "was": "uploads/Penyesuaian Nilai Kontrak Realokasi Ruang Lingkup CRM Fase 2 PLN EMI.pdf",
+   "kind": "document",
+   "bytes": 6878818
+  },
+  {
+   "path": "project/uploads/Sistem_Desain_Layout_PLN_Icon_Plus_7_Versi.html",
+   "was": "uploads/Sistem_Desain_Layout_PLN_Icon_Plus_7_Versi.html",
+   "kind": "page",
+   "bytes": 2217358
+  }
+ ],
+ "written": [
+  {
+   "path": "project/README.md",
+   "bytes": 24339,
+   "was": "readme.md",
+   "appended": "the migrated section; the author’s text above it is as it was (an earlier generated tail or migrated section, if there was one, was cut)"
+  },
+  {
+   "path": "project/assets/notes/COMPONENTS.md",
+   "bytes": 6339
+  },
+  {
+   "path": "project/assets/notes/MIGRATION-REPORT.md",
+   "bytes": 9452
+  },
+  {
+   "path": "project/migration-map.json"
+  }
+ ],
+ "byTheType": [
+  "project/manifest.json"
+ ],
+ "setAside": [],
+ "notCarried": []
+}

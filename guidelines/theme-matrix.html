@@ -1,0 +1,43 @@
+<!-- @dsCard group="Style warna" viewport="1400x820" name="Template × 5 palet (pratinjau langsung)" subtitle="Satu template, lima palet — pilih template & slide; struktur sama, warna berganti" -->
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>
+body{margin:0;padding:16px 20px;font-family:Arial,"Liberation Sans",sans-serif;color:#0A1233;background:#fff}
+a{color:#1F5FA6}a:hover{color:#002060}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:12px}
+.bar b{font-size:16px;color:#002060;margin-right:8px}
+select,button{font:inherit;font-size:13px;padding:6px 10px;border:1px solid #C7D7F0;border-radius:6px;background:#fff;color:#0A1233;cursor:pointer}
+button:hover{background:#EFF6FE}
+.n{font-size:13px;color:#5C6474;min-width:70px;text-align:center}
+.g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.c{display:flex;flex-direction:column;gap:6px}
+.h{display:flex;align-items:center;gap:8px;font-size:13px}.h b{color:#0A1233}.h code{font-size:11px;color:#5C6474}
+.sw{display:flex;height:8px;border-radius:3px;overflow:hidden}.sw i{flex:1}
+.f{position:relative;width:100%;aspect-ratio:16/9;border:1px solid #DFE0E1;border-radius:6px;overflow:hidden;background:#0A1233}
+.f iframe{position:absolute;left:0;top:0;width:1280px;height:720px;border:0;transform-origin:0 0}
+.note{margin:12px 0 0;font-size:12px;color:#5C6474;line-height:1.45}
+</style></head><body>
+<div class="bar"><b>Template × Palet</b>
+<select id="tpl">
+<option value="v1-executive-formal/V1ExecutiveFormal">V1 · Executive Formal</option>
+<option value="v2-analitik-korporat/V2AnalitikKorporat">V2 · Analitik Korporat</option>
+<option value="v3-solution-blueprint/V3SolutionBlueprint">V3 · Solution Blueprint</option>
+<option value="v4-diskusi-fgd/V4DiskusiFgd">V4 · Diskusi FGD</option>
+<option value="v5-dashboard-gelap/V5DashboardGelap">V5 · Dashboard Gelap</option>
+<option value="v6-business-plan/V6BusinessPlan">V6 · Business Plan</option>
+<option value="v7-business-plan-arcgis/V7BusinessPlanArcgis">V7 · Business Plan ArcGIS</option>
+<option value="v8-materi-pengenalan/V8MateriPengenalan" selected>V8 · Materi Pengenalan</option>
+<option value="v9-grand-design/V9GrandDesign">V9 · Grand Design</option>
+<option value="v10-usulan-komersial/V10UsulanKomersial">V10 · Usulan Komersial</option>
+</select>
+<button id="prev">‹ Slide</button><span class="n" id="num">Slide 1</span><button id="next">Slide ›</button>
+</div>
+<div class="g" id="g"></div>
+<p class="note">Template hanya menentukan <b>struktur minimum</b> (urutan & zona slide). Palet dipilih bebas: di template buka <b>Tweaks → Style warna → theme</b>, atau tambahkan <code>?theme=&lt;nama&gt;</code> pada URL. Komponen dari keluarga mana pun mengikuti palet aktif. Foto, header-art, dan ikon 3D adalah gambar raster sehingga tidak berganti warna.</p>
+<script>
+const T=[['asli','Asli template','#C2C9D8','#0A1233','#5C6474','#DFE0E1'],['korporat','Korporat Biru–Teal','#1F5FA6','#002060','#035B71','#00A2B9','#FFC000'],['royal-emas','Royal Emas','#1747C8','#003183','#0A1F5C','#00AEEF','#FCBC01'],['teal-blueprint','Teal Blueprint','#035B71','#002060','#04313D','#00A2B9','#FFC000'],['navy-eksekutif','Navy Eksekutif','#002060','#44546A','#001848','#1F5FA6','#FFC000'],['biru-digital','Biru Digital','#0A57C9','#002060','#041A4A','#00AFF0','#FFC000']];
+const g=document.getElementById('g'),sel=document.getElementById('tpl');let slide=0;
+function build(){g.innerHTML='';slide=0;num.textContent='Slide 1';const hd=/v8|v9|v10/.test(sel.value);
+T.forEach(([id,nm,...sw])=>{const c=document.createElement('div');c.className='c';c.innerHTML=`<div class="h"><b>${nm}</b><code>${id}</code></div><div class="sw">${sw.map(x=>`<i style="background:${x}"></i>`).join('')}</div><div class="f"><iframe loading="lazy" src="../templates/${sel.value}.dc.html${id==='asli'?'':'?theme='+id}"></iframe></div>`;g.appendChild(c);
+const f=c.querySelector('.f'),fr=c.querySelector('iframe');const W=hd?1920:1280,H=hd?1080:720;fr.style.width=W+'px';fr.style.height=H+'px';const fit=()=>fr.style.transform=`scale(${f.clientWidth/W})`;fit();new ResizeObserver(fit).observe(f);});}
+function go(d){slide=Math.max(0,slide+d);num.textContent='Slide '+(slide+1);g.querySelectorAll('iframe').forEach(fr=>{try{const ds=fr.contentDocument.querySelector('deck-stage');ds&&ds.goTo(slide)}catch(e){}})}
+sel.onchange=build;prev.onclick=()=>go(-1);next.onclick=()=>go(1);build();
+</script></body></html>

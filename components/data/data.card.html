@@ -1,0 +1,19 @@
+<!-- @dsCard group="Components" viewport="700x380" name="Data & urutan" subtitle="DataTable (light/dark/v7), Roadmap, Milestones" -->
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;font-family:var(--font-sans);background:#F4F6FA}.mini{transform-origin:0 0;box-shadow:0 0 0 1px #DFE0E1}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS = window.PLNIconPlusLayoutDesignSystem_1eff41;
+const { DataTable, Roadmap, Milestones } = NS;
+const cols=[{key:'k',label:'Rp miliar'},{key:'a',label:'2027',align:'right'},{key:'b',label:'2028',align:'right'},{key:'c',label:'2029',align:'right'}];
+const rows=[{k:'Pendapatan',a:'12,4',b:'18,9',c:'26,1'},{k:'Beban operasi',a:'(8,1)',b:'(10,2)',c:'(12,7)'},{k:'EBITDA',a:'4,3',b:'8,7',c:'13,4'},{k:'Laba bersih',a:'2,1',b:'5,6',c:'9,8'}];
+ReactDOM.createRoot(document.getElementById('root')).render(<div style={{width:1400,transform:'scale(.5)',transformOrigin:'0 0',padding:24,display:'grid',gridTemplateColumns:'1fr 1fr',gap:24}}>
+<DataTable columns={cols} rows={rows} keyRow={2} totalRow />
+<div style={{background:'#002060',padding:12,borderRadius:11}}><DataTable variant="dark" columns={[{key:'s',label:'Sistem sumber'},{key:'u',label:'Uptime',align:'right'},{key:'st',label:'Status',align:'center'}]} rows={[{s:'Maximo',u:'99,8%',st:{status:'ok',text:'Normal'}},{s:'AP2T',u:'98,1%',st:{status:'warn',text:'Waspada'}},{s:'SCADA',u:'97,2%',st:{status:'crit',text:'Kritis'}}]} /></div>
+<Roadmap horizons={[{title:'Fondasi data',items:['Integrasi 3 sistem','POC 2 UP3'],time:'2026–2027'},{title:'Skala nasional',items:['Rollout 40 UP3'],time:'2028'},{title:'Platform terbuka',items:['API mitra'],time:'2029+'}]} />
+<div style={{background:'#002060',borderRadius:11,padding:'0 16px'}}><Milestones current={2} height={3.4} items={[{when:'Q1 2026',title:'POC'},{when:'Q3 2026',title:'Pilot'},{when:'Q1 2027',title:'Go-live'},{when:'Q4 2027',title:'SMOC penuh'}]} /></div>
+</div>);
+</script></body></html>

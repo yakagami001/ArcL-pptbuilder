@@ -1,0 +1,30 @@
+/* Keluarga HD (kanvas 1920×1080) — V8 Materi Pengenalan & V9 Grand Design Solution.
+   Palet = keluarga V7 ArcGIS (Royal Blue/Navy/Emas) yang diselaraskan dengan aturan dasar (kontras ≥4,5, tanpa gradien/bayangan). */
+:root{
+/* Warna HD */
+--hd-ink:#0A1233;--hd-navy-800:#0A2166;--hd-navy-700:#0A1F5C;--hd-navy-600:#003183;
+--hd-royal:#1747C8;--hd-blue-700:#0A57C9;--hd-cyan:#00AEEF;
+--hd-gold:#FCBC01;--hd-gold-300:#F0DCA0;--hd-gold-ink:#7A5600;
+--hd-text2:#5C6474;--hd-text3:#4A5568;--hd-on-dark-2:#D9E3F4;--hd-on-dark-3:#C2C9D8;
+--hd-tint:#EFF6FE;--hd-tint-2:#EDF2FA;--hd-tint-3:#F5F8FD;--hd-tint-gold:#FFFBEC;--hd-penutup:#DFECFD;
+--hd-line:#C7D7F0;--hd-line-soft:#E2EAF7;--hd-line-strong:#9CC0EE;--hd-line-dash:#8FA3C6;--hd-rule:#C2C9D8;
+--hd-inactive:#AEB8CE; /* isian tahap belum aktif — tidak untuk teks putih di atasnya */
+--hd-ok:#2D7055;--hd-warn:#EF8924;--hd-crit:#E4572E; /* status: isian/titik; teks status pakai Ink */
+/* Alias nama referensi (deck Distribusi & SMOC) — markup salinan langsung berwarna benar */
+--navy-900:var(--hd-ink);--navy-800:var(--hd-navy-800);--navy-700:var(--hd-navy-700);--navy-600:var(--hd-navy-600);
+--blue-700:var(--hd-blue-700);--blue-600:var(--hd-royal);--cyan-500:var(--hd-cyan);
+--yellow-500:var(--hd-gold);--yellow-300:var(--hd-gold-300);
+--gray-700:var(--hd-text3);--gray-600:var(--hd-text2);--gray-400:var(--hd-text2);/* #8B93A6 dikoreksi → 5,95:1 */--gray-300:#9AA7C4;--gray-200:var(--hd-rule);
+--surface-050:var(--hd-tint-3);--surface-100:var(--hd-tint);--surface-150:var(--hd-tint-2);--surface-200:#E6EFFB;--surface-warn-100:var(--hd-tint-gold);
+--border-050:var(--hd-tint-2);--border-100:var(--hd-line-soft);--border-300:var(--hd-line);--border-600:var(--hd-line-strong);--border-700:var(--hd-line-dash);
+/* Huruf HD (px pada 1920) */
+--font-hd-display:Arial,"Liberation Sans",Helvetica,sans-serif;--font-hd-body:Calibri,Carlito,"Liberation Sans",Arial,sans-serif;
+--fs-hd-cover:92px;--fs-hd-section:88px;--fs-hd-end:108px;
+--fs-hd-title-v8:72px;--fs-hd-title-v9:56px;--fs-hd-sub-v8:32px;--fs-hd-sub-v9:30px;
+--fs-hd-kpi:60px;--fs-hd-card-head:32px;--fs-hd-body:26px;--fs-hd-label:24px;--fs-hd-min:24px;
+/* Kanvas HD */
+--hd-w:1920px;--hd-h:1080px;--hd-margin:72px;--hd-gap:20px;
+--hd-title-max:1120px; /* lebar judul saat header-art aktif */
+--hd-content-top:320px;--hd-content-bottom:880px;--hd-insight-top:904px;--hd-footer-bottom:26px;
+--hd-radius-v8:12px;--hd-radius-v9:8px;--hd-line-card:1.5px;--hd-bar:8px;
+}

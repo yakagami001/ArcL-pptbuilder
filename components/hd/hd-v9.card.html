@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="700x394" name="HD · Slide isi V9" subtitle="HdHeader v9 (art kota-cerdas-cloud) · HdKpi · HdStatusList · HdInsight v9 · HdFooter v9" -->
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>HD slide V9</title><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:#F4F6FA;overflow:hidden}.sl{position:relative;width:1920px;height:1080px;background:#fff;overflow:hidden;font-family:var(--font-hd-body);transform-origin:0 0}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { HdHeader, HdKpi, HdStatusList, HdInsight, HdFooter } = window.PLNIconPlusLayoutDesignSystem_1eff41;
+const k=700/1920;
+ReactDOM.createRoot(document.getElementById('root')).render(<div className="sl" style={{transform:'scale('+k+')'}}>
+<HdHeader variant="v9" art="kota-cerdas-cloud" title="COMMAND CENTER EKSISTING" subtitle="Fasilitas sudah lengkap, perannya masih reaktif" />
+<div style={{position:'absolute',left:72,right:72,top:300,display:'grid',gridTemplateColumns:'repeat(4,minmax(0,1fr))',gap:20}}>
+<HdKpi value="2,1 juta" title="Smart meter AMR · AMI" note="perluasan prabayar & pascabayar" highlight /><HdKpi value="11" title="Aplikasi sumber data" note="satu tampilan" /><HdKpi value="7 bulan" title="Fase 1–4" note="43 aktivitas" /><HdKpi value="6 area" title="Dioptimalkan" note="tanpa ruang baru" /></div>
+<div style={{position:'absolute',left:72,right:72,top:530,height:330,display:'grid',gridTemplateColumns:'1fr 1fr',gap:32}}>
+<HdStatusList icon="clipboard-solid" items={['Videowall & workstation','Operator shift','Alur dispatch Yantek']} />
+<HdStatusList tone="gap" icon="warning-pale" items={['Read rate AMR/AMI/ODA','Komunikasi modem & DCU','Kesehatan trafo distribusi']} /></div>
+<HdInsight variant="v9" at={[72,890,1776]}>Kekurangan utama ada pada <b style={{color:'#1747C8'}}>data dan proses</b>, bukan ruang atau orang.</HdInsight>
+<HdFooter variant="v9" topic="Grand Design SMOC" page="4" />
+</div>);
+</script></body></html>

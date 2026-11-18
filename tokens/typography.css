@@ -1,0 +1,31 @@
+/* Satu keluarga huruf: Arial. Hierarki dari ukuran & bobot. Ukuran pt slide; px = pt × 96/72 pada kanvas 1280×720. */
+:root{
+--font-sans:Arial,"Liberation Sans",Helvetica,sans-serif;
+--font-v7-body:Calibri,Carlito,"Liberation Sans",Arial,sans-serif;
+--font-display:var(--font-sans);--font-body:var(--font-sans);
+/* Skala slide (px pada kanvas 1280) */
+--fs-cover:48px;      /* 36pt judul sampul */
+--fs-section:72px;    /* 54pt judul bagian */
+--fs-end:64px;        /* 48pt TERIMA KASIH */
+--fs-title-v1:37.33px;/* 28pt */
+--fs-title-v2:34.67px;/* 26pt V2/V3/V5 */
+--fs-title-v4:32px;   /* 24pt V4/V6 */
+--fs-title-v7:40px;   /* 30pt */
+--fs-subtitle:17.33px;/* 13pt */
+--fs-hero-num:53.33px;/* 40pt angka besar (30–54pt) */
+--fs-kpi:25.33px;     /* 19pt nilai KPI */
+--fs-card-head:18.67px;/* 14pt */
+--fs-label:13.33px;   /* 10pt label kapital */
+--fs-body:16px;       /* 12pt isi */
+--fs-table:14.67px;   /* 11pt */
+--fs-caption:12px;    /* 9pt batas bawah */
+--lh-title:1.08; /* @kind font */
+--lh-body:1.2; /* @kind font */
+--lh-tight:1.1; /* @kind font */
+
+--ls-label:2px;       /* 1,5pt label kapital */
+--fw-regular:400; /* @kind font */
+--fw-bold:700; /* @kind font */
+/* Skala dokumen/UI (layar) */
+--fs-doc-h1:44px;--fs-doc-h2:32px;--fs-doc-h3:21px;--fs-doc-h4:16px;--fs-doc-lead:18px;--fs-doc-body:16px;--fs-doc-small:13.5px;--fs-doc-xs:12px;
+}

@@ -1,0 +1,1 @@
+WAJIB dipasang di SETIAP slide/halaman (sampul, isi, bagian, penutup). `<BrandLogos tone="light|dark" />` untuk pojok kiri+kanan atas; `placement="lockup"` untuk sampul/penutup. Jangan pernah hanya satu logo.

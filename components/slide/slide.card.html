@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Slide, SlideTitle, SlideFooter, Icon" subtitle="Kanvas + 7 layout master, 5 gaya judul, 3 kaki slide" -->
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;font-family:var(--font-sans);background:#F4F6FA}.mini{transform-origin:0 0;box-shadow:0 0 0 1px #DFE0E1}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS = window.PLNIconPlusLayoutDesignSystem_1eff41;
+const { Slide, SlideTitle, SlideFooter, Icon } = NS;
+const S = ({k=0.265,children}) => <div style={{width:1280*k,height:720*k,overflow:'hidden'}}><div className="mini" style={{transform:'scale('+k+')'}}>{children}</div></div>;
+ReactDOM.createRoot(document.getElementById('root')).render(<div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:10,padding:12}}>
+<S><Slide layout="cover" title={['Business Plan','Platform GIS 2027–2031']} date="5 Oktober 2026" /></S>
+<S><Slide layout="section" title={['01','Latar belakang']} /></S>
+<S><Slide layout="white" page={3}><SlideTitle variant="conclusion" title="Portofolio tumbuh 2,3× — 77% di pipeline" subtitle="Ringkasan kinerja portofolio hingga September 2026" /><SlideFooter text="Sumber: CRM PLN Icon Plus, ditarik 30 Sep 2026" /></Slide></S>
+<S><Slide layout="gray" page={4}><SlideTitle variant="chapter" title="PROYEKSI LABA RUGI" chapter="06" chapterName="Keuangan" /><SlideFooter variant="progress" docName="Business Plan Platform GIS 2027–2031" active={6} /></Slide></S>
+<S><Slide layout="blue" page={5}><SlideTitle variant="statement" dark title="Yang perlu dijawab forum hari ini" line2="Tiga pertanyaan diskusi" /></Slide></S>
+<S><Slide version="V7"><SlideTitle variant="v7" title="EXECUTIVE SUMMARY" /><SlideFooter variant="v7" page={2} /></Slide></S>
+<div style={{gridColumn:'1/-1',display:'flex',gap:10,alignItems:'center'}}>{['trafo','gardu','petir','server','database','monitor','pin-lokasi','rupiah','target','perisai-cek'].map(n=><Icon key={n} name={n} circle="tint" size={40} />)}<Icon name="bola-lampu" circle="biru" size={40} /><Icon name="lonceng" circle="amber" size={40} /></div>
+</div>);
+</script></body></html>

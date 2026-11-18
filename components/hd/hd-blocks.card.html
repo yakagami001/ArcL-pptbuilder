@@ -1,0 +1,19 @@
+<!-- @dsCard group="Components" viewport="700x394" name="HD · Blok struktur" subtitle="HdLayerStack · HdJourney · HdDecision · HdAgenda · HdNumberedTable" -->
+<!doctype html><html lang="id"><head><meta charset="utf-8"><title>HD blocks</title><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:#F4F6FA;overflow:hidden}.sl{position:relative;width:1920px;height:1080px;background:#fff;overflow:hidden;font-family:var(--font-hd-body);transform-origin:0 0}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { HdLayerStack, HdJourney, HdDecision, HdAgenda, HdNumberedTable } = window.PLNIconPlusLayoutDesignSystem_1eff41;
+const k=700/1920;
+ReactDOM.createRoot(document.getElementById('root')).render(<div className="sl" style={{transform:'scale('+k+')',background:'#F4F6FA'}}>
+<HdLayerStack at={[40,40,900,500]} layers={[{code:'L4',title:'Kapabilitas terpadu',desc:'Satu model data',tag:'TARGET',tone:'gold'},{code:'L3',title:'Aplikasi',desc:'SCADA, APKT, HES'},{code:'L2',title:'Komunikasi',desc:'Fiber, 4G, RF mesh'},{code:'L1',title:'Aset primer',desc:'Trafo, PMT, gardu',tone:'dark'}]} />
+<HdJourney at={[980,40,900,500]} current={2} stages={[{title:'TERPISAH',desc:'Data tersebar'},{title:'TERHUBUNG',desc:'Satu tampilan'},{title:'TERPANTAU',desc:'EWS aktif'},{title:'UNGGUL',desc:'Layanan prediktif'}]} />
+<HdDecision at={[40,580,900,460]} decisions={[{title:'Setujui Fase 0',desc:'Asesmen 3 lokasi'},{title:'Tetapkan UID pilot'}]} next={[{when:'Nov 2026',title:'Kick-off asesmen'},{when:'Des 2026',title:'Desain pilot'}]} />
+<div style={{position:'absolute',left:980,top:580,width:900,height:460,background:'#fff',padding:20,boxSizing:'border-box',display:'flex',flexDirection:'column',gap:16}}>
+<HdAgenda columns={2} highlight={3} style={{height:200}} items={[{title:'Ringkasan'},{title:'Urgensi'},{title:'Arsitektur'},{title:'Keputusan'}]} />
+<HdNumberedTable rowHeight={80} columns={[{label:'TANTANGAN'},{label:'INDIKATOR',width:'220px'}]} rows={[['Lokasi gangguan sulit','SAIDI [__]'],['Susut belum terukur','Susut [__%]']]} /></div>
+</div>);
+</script></body></html>
